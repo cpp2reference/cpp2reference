@@ -2,6 +2,7 @@
 layout: page
 title: std::condition_variable
 permalink: /thread/condition_variable/
+parent: Concurrency Support Library
 ---
 # std::condition_variable
 
