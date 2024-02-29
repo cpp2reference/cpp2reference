@@ -10,7 +10,10 @@ parent: Concurrency Support Library
 
 ## Example
 
-[Run on Compiler Explorer](https://cpp2.godbolt.org/z/q3W6oYMWh)
+<div class="code-example" markdown="1">
+[Run on Compiler Explorer](https://cpp2.godbolt.org/z/q3W6oYMWh){: .btn }{:target="_blank"}
+</div>
+{: .m-0 .p-2 }
 
 ```cpp
 m: std::mutex = ();
@@ -29,14 +32,11 @@ worker: () = {
 
         processed = true;
         std::cout << "Worker thread signals data processing completed\n";
-
-        _ = lk.mutex();  // Temp workaround for cppfront bug
     }
     cv.notify_one();
 }
 
 main: () -> int = {
-
     worker_thd: std::thread = (worker);
 
     data = "Example data";
@@ -51,20 +51,15 @@ main: () -> int = {
     (copy lk: std::unique_lock = (m))
     {
         cv.wait(lk, :() -> bool = processed);
-
-        _ = lk.mutex();  // Temp workaround for cppfront bug
     }
-
-    std::cout << "Back in main(), data = " << data << '\n';
+    std::cout << "Back in main(), data = (data)$\n";
 
     worker_thd.join();
-
-    _ = m.native_handle();  // Temp workaround for cppfront bug
-    _ = cv.native_handle();  // Temp workaround for cppfront bug
 
     return 0;
 }
 ```
+{: .lh-0 }
 
 ## Output
 
@@ -74,3 +69,4 @@ Worker is processing data
 Worker thread signals data processing completed
 Back in main(), data = Example data after processing
 ```
+{: .lh-0 }
