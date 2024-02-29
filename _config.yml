@@ -16,8 +16,8 @@
 title: Cpp2 Reference
 description: >- # this means to ignore newlines until "baseurl:"
   An online reference for the C++ Standard Library with code examples written in Cpp2.
-baseurl: "/cpp2reference"
-url: "https://cpp2reference.github.io"
+baseurl: ""
+url: "https://cpp2reference.com"
 
 # Build settings
 markdown: kramdown
