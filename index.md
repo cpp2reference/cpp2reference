@@ -4,3 +4,6 @@
 
 layout: home
 ---
+A [Cpp2](https://github.com/hsutter/cppfront/) online reference for the C++ Standard Library.
+
+Code samples are copied from the excellent [cppreference.com](https://cppreference.com) (under their permissive license) and translated into Cpp2.
