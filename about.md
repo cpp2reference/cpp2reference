@@ -16,4 +16,4 @@ Just like [cppreference.com](https://cppreference.com), all content on this site
 
 # Contact
 
-`cpp2reference@gmail.com`
+You can contact us at `comments@cpp2reference.com`.
