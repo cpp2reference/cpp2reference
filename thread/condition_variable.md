@@ -3,10 +3,12 @@ layout: page
 title: std::condition_variable
 permalink: /thread/condition_variable/
 parent: Concurrency Support Library
+cppreference: /thread/condition_variable
 ---
+
 # std::condition_variable
 
-[cppreference.com](https://en.cppreference.com/w/cpp/thread/condition_variable)
+{% include cppreference_link.html %}
 
 ## Example
 

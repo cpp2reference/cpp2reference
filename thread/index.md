@@ -5,16 +5,21 @@ permalink: /thread/
 nav_order: 2
 has_children: true
 has_toc: false
+cppreference: /thread
 ---
 
 # Concurrency support library
 
-[cppreference.com](https://en.cppreference.com/w/cpp/thread)
+{% include cppreference_link.html %}
 
-## Threads
+## <a id="threads"></a> Threads
 
 [std::thread](thread.md)
 
-## Condition variables
+## <a id="condition-variables"></a> Condition variables
 
 [std::condition_variable](condition_variable.md)
+
+## <a id="futures"></a> Futures
+
+[std::future](future.md)

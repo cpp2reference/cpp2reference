@@ -3,10 +3,11 @@ layout: page
 title: std::thread
 permalink: /thread/thread/
 parent: Concurrency Support Library
+cppreference: /thread/thread
 ---
 # std::thread
 
-[cppreference.com](https://en.cppreference.com/w/cpp/thread/thread)
+{% include cppreference_link.html %}
 
 ## Example
 
