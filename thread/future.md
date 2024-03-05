@@ -13,7 +13,7 @@ cppreference: /thread/future
 ## Example
 
 <div class="code-example" markdown="1">
-[Run on Compiler Explorer](https://cpp2.godbolt.org/z/MGbhs1Y9n){: .btn }{:target="_blank"}
+[Run on Compiler Explorer](https://cpp2.godbolt.org/z/YjWMqK81G){: .btn }{:target="_blank"}
 </div>
 {: .m-0 .p-2 }
 
@@ -30,8 +30,7 @@ main: () = {
     // future from a promise
     p:  std::promise<int> = ();
     f3: std::future<int> = p.get_future();
-    t2: std::thread = :() = p$.set_value_at_thread_exit(9);
-    t2.detach();
+    std::thread(:() = p$.set_value_at_thread_exit(9)).detach();
  
     std::cout << "Waiting..." << std::flush;
     f1.wait();
