@@ -16,6 +16,8 @@ cppreference: /thread
 
 [std::thread](thread.md)
 
+[std::jthread](jthread.md)
+
 ## <a id="condition-variables"></a> Condition variables
 
 [std::condition_variable](condition_variable.md)
