@@ -18,6 +18,10 @@ cppreference: /thread
 
 [std::jthread](jthread.md)
 
+## <a id="mutex"></a> Mutual exclusion
+
+[std::mutex](mutex.md)
+
 ## <a id="condition-variables"></a> Condition variables
 
 [std::condition_variable](condition_variable.md)
