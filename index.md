@@ -28,5 +28,5 @@ table, th, td {
 </style>
 | Language support library | Memory management library | [Concurrency support library](/thread/index.md){: .fs-5 } |
 |  |  | [thread](/thread/thread.md){: .m-0 .p-0 .pl-4 } - [jthread](/thread/jthread.md){: .m-0 .p-0 } |
-|  |  | [Mutual exclusion](/thread/index.md#mutex){: .m-0 .p-0 .pl-4 } |
+|  |  | [Mutual exclusion](/thread/index.md#mutex){: .m-0 .p-0 .pl-4 } - [Semaphores](/thread/index.md#semaphores){: .m-0 .p-0 } |
 |  |  | [Condition variables](/thread/index.md#condition-variables){: .m-0 .p-0 .pl-4 } - [Futures](/thread/index.md#futures){: .m-0 .p-0 } |

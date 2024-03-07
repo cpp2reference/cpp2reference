@@ -26,6 +26,12 @@ cppreference: /thread
 
 [std::condition_variable](condition_variable.md)
 
+## <a id="semaphores"></a> Semaphores
+
+[std::counting_semaphore](counting_semaphore.md)
+
+[std::binary_semaphore](counting_semaphore.md)
+
 ## <a id="futures"></a> Futures
 
 [std::future](future.md)
