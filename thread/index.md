@@ -14,24 +14,28 @@ cppreference: /thread
 
 ## <a id="threads"></a> Threads
 
-[std::thread](thread.md)
+[thread](thread.md)
 
-[std::jthread](jthread.md)
+[jthread](jthread.md)
+
+## <a id="atomic"></a> Atomic operations
+
+[atomic](/atomic/atomic.md)
 
 ## <a id="mutex"></a> Mutual exclusion
 
-[std::mutex](mutex.md)
+[mutex](mutex.md)
 
 ## <a id="condition-variables"></a> Condition variables
 
-[std::condition_variable](condition_variable.md)
+[condition_variable](condition_variable.md)
 
 ## <a id="semaphores"></a> Semaphores
 
-[std::counting_semaphore](counting_semaphore.md)
+[counting_semaphore](counting_semaphore.md)
 
-[std::binary_semaphore](counting_semaphore.md)
+[binary_semaphore](counting_semaphore.md)
 
 ## <a id="futures"></a> Futures
 
-[std::future](future.md)
+[future](future.md)
