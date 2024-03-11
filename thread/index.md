@@ -22,6 +22,8 @@ cppreference: /thread
 
 [atomic](/atomic/atomic.md)
 
+[atomic_flag](/atomic/atomic_flag.md)
+
 ## <a id="mutex"></a> Mutual exclusion
 
 [mutex](mutex.md)
