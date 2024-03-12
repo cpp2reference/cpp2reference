@@ -38,6 +38,10 @@ cppreference: /thread
 
 [binary_semaphore](counting_semaphore.md)
 
+## <a id="latches-barriers"></a> Latches and Barriers
+
+[latch](latch.md)
+
 ## <a id="futures"></a> Futures
 
 [future](future.md)
