@@ -42,6 +42,8 @@ cppreference: /thread
 
 [latch](latch.md)
 
+[barrier](barrier.md)
+
 ## <a id="futures"></a> Futures
 
 [future](future.md)
