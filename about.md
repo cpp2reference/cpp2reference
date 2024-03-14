@@ -2,7 +2,7 @@
 layout: page
 title: About cpp2reference.com
 permalink: /about/
-nav_order: 3
+nav_order: 4
 ---
 # Purpose
 
