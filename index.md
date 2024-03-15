@@ -26,8 +26,8 @@ table, th, td {
    border-spacing: none;
 }
 </style>
-| [Language support library](/utility/index.md#language-support){: .fs-5 } | Memory management library | [Concurrency support library](/thread/index.md){: .fs-5 } |
-| [source_location](/utility/source_location.md){: .m-0 .p-0 .pl-4 } |  | [thread](/thread/thread.md){: .m-0 .p-0 .pl-4 } - [jthread](/thread/jthread.md){: .m-0 .p-0 } |
+| [Language support library](/utility/index.md#language-support){: .fs-5 } | [Containers library](/container/index.md){: .fs-5 } | [Concurrency support library](/thread/index.md){: .fs-5 } |
+| [source_location](/utility/source_location.md){: .m-0 .p-0 .pl-4 } | [vector](/container/vector.md){: .m-0 .p-0 .pl-4 } | [thread](/thread/thread.md){: .m-0 .p-0 .pl-4 } - [jthread](/thread/jthread.md){: .m-0 .p-0 } |
 |  |  | [atomic](/atomic/atomic.md){: .m-0 .p-0 .pl-4 } - [atomic_flag](/atomic/atomic_flag.md){: .m-0 .p-0 } |
 |  |  | [Mutual exclusion](/thread/index.md#mutex){: .m-0 .p-0 .pl-4 } - [Semaphores](/thread/index.md#semaphores){: .m-0 .p-0 } |
 |  |  | [Condition variables](/thread/index.md#condition-variables){: .m-0 .p-0 .pl-4 } - [Futures](/thread/index.md#futures){: .m-0 .p-0 } |
