@@ -14,6 +14,8 @@ cppreference: /container
 
 ## <a id="sequence"></a> Sequence containers
 
+[array](array.md)
+
 [vector](vector.md)
 
 [deque](deque.md)
