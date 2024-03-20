@@ -1,0 +1,49 @@
+---
+layout: page
+title: std::list
+permalink: /container/list/
+parent: Containers library
+cppreference: /container/list
+---
+# std::list
+
+{% include cppreference_link.html %}
+
+## Example
+
+<div class="code-example" markdown="1">
+[Run on Compiler Explorer](https://cpp2.godbolt.org/z/fbjWY59oq){: .btn }{:target="_blank"}
+</div>
+{: .m-0 .p-2 }
+
+```cpp
+main: () = {
+    // Create a list containing integers
+    l: std::list = (7, 5, 16, 8);
+ 
+    // Add an integer to the front of the list
+    l.push_front(25);
+    // Add an integer to the back of the list
+    l.push_back(13);
+ 
+    // Insert an integer before 16 by searching
+    it:= std::find(l.begin(), l.end(), 16);
+    if (it != l.end()) {
+        l.insert(it, 42);
+    }
+ 
+    // Print out the list
+    std::cout << "l = { ";
+    for l do (n)
+        std::cout << "(n)$, ";
+    std::cout << "};\n";
+}
+```
+{: .lh-0 }
+
+## Output
+
+```
+l = { 25, 7, 5, 42, 16, 8, 13, };
+```
+{: .lh-0 }

@@ -19,3 +19,5 @@ cppreference: /container
 [vector](vector.md)
 
 [deque](deque.md)
+
+[list](list.md)
