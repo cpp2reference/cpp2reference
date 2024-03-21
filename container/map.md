@@ -4,7 +4,7 @@ title: std::map
 permalink: /container/map/
 parent: Containers library
 cppreference: /container/map
-godbolt: https://cpp2.godbolt.org/z/sodbPK8W6
+godbolt: https://cpp2.godbolt.org/z/hex6o5MYo
 ---
 # std::map
 
@@ -25,10 +25,10 @@ print_map: (comment: std::string_view, m: std::map<std::string, int>) = {
  
 main: () = {
     // Create a map of three (string, int) pairs
-    m: std::map<std::string, int> = ();
-    m["CPU"] = 10;
-    m["GPU"] = 15;
-    m["RAM"] = 20;
+    m: std::map<std::string, int> = (
+        std::make_pair("CPU", 10),
+        std::make_pair("GPU", 15),
+        std::make_pair("RAM", 20));
 
     print_map("1) Initial map: ", m);
  
@@ -43,7 +43,7 @@ main: () = {
     m.erase("GPU");
     print_map("5) After erase: ", m);
  
-    std::erase_if(m, :(pair) -> bool = pair.second > 25);
+    std::erase_if(m, :(pair) pair.second > 25);
     print_map("6) After erase: ", m);
     std::cout << "7) m.size() = (m.size())$\n";
  
