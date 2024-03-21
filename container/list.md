@@ -4,6 +4,7 @@ title: std::list
 permalink: /container/list/
 parent: Containers library
 cppreference: /container/list
+godbolt: https://cpp2.godbolt.org/z/fbjWY59oq
 ---
 # std::list
 
@@ -11,10 +12,7 @@ cppreference: /container/list
 
 ## Example
 
-<div class="code-example" markdown="1">
-[Run on Compiler Explorer](https://cpp2.godbolt.org/z/fbjWY59oq){: .btn }{:target="_blank"}
-</div>
-{: .m-0 .p-2 }
+{% include godbolt_example_link.html %}
 
 ```cpp
 main: () = {

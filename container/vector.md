@@ -4,6 +4,7 @@ title: std::vector
 permalink: /container/vector/
 parent: Containers library
 cppreference: /container/vector
+godbolt: https://cpp2.godbolt.org/z/WTsMaWWrn
 ---
 # std::vector
 
@@ -11,10 +12,7 @@ cppreference: /container/vector
 
 ## Example
 
-<div class="code-example" markdown="1">
-[Run on Compiler Explorer](https://cpp2.godbolt.org/z/WTsMaWWrn){: .btn }{:target="_blank"}
-</div>
-{: .m-0 .p-2 }
+{% include godbolt_example_link.html %}
 
 ```cpp
 main: () = {

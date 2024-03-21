@@ -4,6 +4,7 @@ title: std::source_location
 permalink: /utility/source_location/
 parent: Utility library
 cppreference: /utility/source_location
+godbolt: https://cpp2.godbolt.org/z/fvrjcandc
 ---
 # std::source_location
 
@@ -11,10 +12,7 @@ cppreference: /utility/source_location
 
 ## Example
 
-<div class="code-example" markdown="1">
-[Run on Compiler Explorer](https://cpp2.godbolt.org/z/fvrjcandc){: .btn }{:target="_blank"}
-</div>
-{: .m-0 .p-2 }
+{% include godbolt_example_link.html %}
 
 ```cpp
 log: (message: std::string_view, location: std::source_location) = {

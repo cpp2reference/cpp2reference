@@ -4,6 +4,7 @@ title: std::counting_semaphore, std::binary_semaphore
 permalink: /thread/counting_semaphore/
 parent: Concurrency Support Library
 cppreference: /thread/counting_semaphore
+godbolt: https://cpp2.godbolt.org/z/aY8Gn4Pqh
 ---
 # std::counting_semaphore, std::binary_semaphore
 
@@ -11,10 +12,7 @@ cppreference: /thread/counting_semaphore
 
 ## Example
 
-<div class="code-example" markdown="1">
-[Run on Compiler Explorer](https://cpp2.godbolt.org/z/aY8Gn4Pqh){: .btn }{:target="_blank"}
-</div>
-{: .m-0 .p-2 }
+{% include godbolt_example_link.html %}
 
 ```cpp
 // global binary semaphore instances

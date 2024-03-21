@@ -4,6 +4,7 @@ title: std::atomic_flag
 permalink: /atomic/atomic_flag/
 parent: Concurrency Support Library
 cppreference: /atomic/atomic_flag
+godbolt: https://cpp2.godbolt.org/z/9KTWe8nsM
 ---
 # std::atomic_flag
 
@@ -11,10 +12,7 @@ cppreference: /atomic/atomic_flag
 
 ## Example
 
-<div class="code-example" markdown="1">
-[Run on Compiler Explorer](https://cpp2.godbolt.org/z/9KTWe8nsM){: .btn }{:target="_blank"}
-</div>
-{: .m-0 .p-2 }
+{% include godbolt_example_link.html %}
 
 ```cpp
 lock: std::atomic_flag = ATOMIC_FLAG_INIT;

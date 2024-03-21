@@ -4,6 +4,7 @@ title: std::forward_list
 permalink: /container/forward_list/
 parent: Containers library
 cppreference: /container/forward_list
+godbolt: https://cpp2.godbolt.org/z/b8vnvrKKh
 ---
 # std::forward_list
 
@@ -11,10 +12,7 @@ cppreference: /container/forward_list
 
 ## Example
 
-<div class="code-example" markdown="1">
-[Run on Compiler Explorer](https://cpp2.godbolt.org/z/b8vnvrKKh){: .btn }{:target="_blank"}
-</div>
-{: .m-0 .p-2 }
+{% include godbolt_example_link.html %}
 
 ```cpp
 print: (list: std::forward_list<int>) = {

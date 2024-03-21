@@ -4,6 +4,7 @@ title: std::mutex
 permalink: /thread/mutex/
 parent: Concurrency Support Library
 cppreference: /thread/mutex
+godbolt: https://cpp2.godbolt.org/z/ne5Y4T1ch
 ---
 # std::mutex
 
@@ -11,21 +12,18 @@ cppreference: /thread/mutex
 
 ## Example
 
-<div class="code-example" markdown="1">
-[Run on Compiler Explorer](https://cpp2.godbolt.org/z/Pza95T7GK){: .btn }{:target="_blank"}
-</div>
-{: .m-0 .p-2 }
+{% include godbolt_example_link.html %}
 
 ```cpp
-g_pages: std::map<std::string, std::string> = ();
+g_pages:       std::map<std::string, std::string> = ();
 g_pages_mutex: std::mutex = ();
  
 save_page: (url: std::string) = {
     // simulate a long page fetch
     std::this_thread::sleep_for(std::chrono::seconds(2));
-    result: std::string = "fake content";
+    result: const std::string = "fake content";
  
-    _: std::lock_guard<std::mutex> = (g_pages_mutex);
+    _: std::lock_guard = (g_pages_mutex);
     g_pages[url] = result;
 }
  

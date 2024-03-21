@@ -4,6 +4,7 @@ title: std::barrier
 permalink: /thread/barrier/
 parent: Concurrency Support Library
 cppreference: /thread/barrier
+godbolt: https://cpp2.godbolt.org/z/4de3Eqn39
 ---
 # std::barrier
 
@@ -11,10 +12,7 @@ cppreference: /thread/barrier
 
 ## Example
 
-<div class="code-example" markdown="1">
-[Run on Compiler Explorer](https://cpp2.godbolt.org/z/4de3Eqn39){: .btn }{:target="_blank"}
-</div>
-{: .m-0 .p-2 }
+{% include godbolt_example_link.html %}
 
 ```cpp
 phase: std::string = "... done\nCleaning up...\n";

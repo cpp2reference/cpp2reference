@@ -4,6 +4,7 @@ title: std::array
 permalink: /container/array/
 parent: Containers library
 cppreference: /container/array
+godbolt: https://cpp2.godbolt.org/z/5ze614vx9
 ---
 # std::array
 
@@ -11,10 +12,7 @@ cppreference: /container/array
 
 ## Example
 
-<div class="code-example" markdown="1">
-[Run on Compiler Explorer](https://cpp2.godbolt.org/z/5ze614vx9){: .btn }{:target="_blank"}
-</div>
-{: .m-0 .p-2 }
+{% include godbolt_example_link.html %}
 
 ```cpp
 main: () = {

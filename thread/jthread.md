@@ -4,6 +4,7 @@ title: std::jthread
 permalink: /thread/jthread/
 parent: Concurrency Support Library
 cppreference: /thread/jthread
+godbolt: https://cpp2.godbolt.org/z/4v6PP6Yxx
 ---
 # std::jthread
 
@@ -11,10 +12,7 @@ cppreference: /thread/jthread
 
 ## Example
 
-<div class="code-example" markdown="1">
-[Run on Compiler Explorer](https://cpp2.godbolt.org/z/4v6PP6Yxx){: .btn }{:target="_blank"}
-</div>
-{: .m-0 .p-2 }
+{% include godbolt_example_link.html %}
 
 ```cpp
 foo: () = {

@@ -4,6 +4,7 @@ title: std::atomic
 permalink: /atomic/atomic/
 parent: Concurrency Support Library
 cppreference: /atomic/atomic
+godbolt: https://cpp2.godbolt.org/z/caxPaPxe5
 ---
 # std::atomic
 
@@ -11,10 +12,7 @@ cppreference: /atomic/atomic
 
 ## Example
 
-<div class="code-example" markdown="1">
-[Run on Compiler Explorer](https://cpp2.godbolt.org/z/caxPaPxe5){: .btn }{:target="_blank"}
-</div>
-{: .m-0 .p-2 }
+{% include godbolt_example_link.html %}
 
 ```cpp
 acnt: std::atomic_int = ();

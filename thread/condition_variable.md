@@ -4,6 +4,7 @@ title: std::condition_variable
 permalink: /thread/condition_variable/
 parent: Concurrency Support Library
 cppreference: /thread/condition_variable
+godbolt: https://cpp2.godbolt.org/z/W5h4zozhW
 ---
 
 # std::condition_variable
@@ -12,17 +13,14 @@ cppreference: /thread/condition_variable
 
 ## Example
 
-<div class="code-example" markdown="1">
-[Run on Compiler Explorer](https://cpp2.godbolt.org/z/q3W6oYMWh){: .btn }{:target="_blank"}
-</div>
-{: .m-0 .p-2 }
+{% include godbolt_example_link.html %}
 
 ```cpp
-m: std::mutex = ();
-cv: std::condition_variable = ();
-data: std::string = ();
-ready: bool = false;
-processed : bool = false;
+m:         std::mutex = ();
+cv:        std::condition_variable = ();
+data:      std::string = ();
+ready:     bool = false;
+processed: bool = false;
 
 worker: () = {
     (copy lk: std::unique_lock = (m))
@@ -54,7 +52,8 @@ main: () -> int = {
     {
         cv.wait(lk, :() -> bool = processed);
     }
-    std::cout << "Back in main(), data = (data)$\n";
+
+    std::cout << "Back in main(), data = " << data << '\n';
 
     worker_thd.join();
 

@@ -4,6 +4,7 @@ title: std::future
 permalink: /thread/future/
 parent: Concurrency Support Library
 cppreference: /thread/future
+godbolt: https://cpp2.godbolt.org/z/7e8beYqhe
 ---
 
 # std::future
@@ -12,10 +13,7 @@ cppreference: /thread/future
 
 ## Example
 
-<div class="code-example" markdown="1">
-[Run on Compiler Explorer](https://cpp2.godbolt.org/z/YjWMqK81G){: .btn }{:target="_blank"}
-</div>
-{: .m-0 .p-2 }
+{% include godbolt_example_link.html %}
 
 ```cpp
 main: () = {
@@ -30,7 +28,7 @@ main: () = {
     // future from a promise
     p:  std::promise<int> = ();
     f3: std::future<int> = p.get_future();
-    std::thread(:() = p$.set_value_at_thread_exit(9)).detach();
+    std::thread(:() = p&$*.set_value_at_thread_exit(9)).detach();
  
     std::cout << "Waiting..." << std::flush;
     f1.wait();

@@ -4,6 +4,7 @@ title: std::latch
 permalink: /thread/latch/
 parent: Concurrency Support Library
 cppreference: /thread/latch
+godbolt: https://cpp2.godbolt.org/z/5KoToMb99
 ---
 # std::latch
 
@@ -11,10 +12,7 @@ cppreference: /thread/latch
 
 ## Example
 
-<div class="code-example" markdown="1">
-[Run on Compiler Explorer](https://cpp2.godbolt.org/z/5KoToMb99){: .btn }{:target="_blank"}
-</div>
-{: .m-0 .p-2 }
+{% include godbolt_example_link.html %}
 
 ```cpp
 Job: @struct type = {
