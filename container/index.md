@@ -26,6 +26,8 @@ cppreference: /container
 
 ## <a id="associative"></a> Associative containers
 
+[set](set.md)
+
 [map](map.md)
 
 [multimap](multimap.md)
