@@ -4,7 +4,7 @@ title: std::set
 permalink: /container/set/
 parent: Containers library
 cppreference: /container/set
-godbolt: https://cpp2.godbolt.org/z/oP5bzeP8o
+godbolt: https://cpp2.godbolt.org/z/x4qjn65xf
 ---
 # std::set
 
@@ -41,13 +41,11 @@ main: () = {
     example: std::set<int> = (1, 2, 3, 4);
  
     (search:= example.find(2))
-    {
-        if search != example.end() {
-            std::cout << "Found (search*)$\n";
-        }
-        else {
-            std::cout << "Not found\n";
-        }
+    if search != example.end() {
+        std::cout << "Found (search*)$\n";
+    }
+    else {
+        std::cout << "Not found\n";
     }
  
     // Transparent comparison demo.
@@ -57,15 +55,12 @@ main: () = {
         :FatKey = (3),
         :FatKey = (4));
  
-    lk: LightKey = (2);
-    (search:= example2.find(lk))
-    {
-        if search != example2.end() {
-            std::cout << "Found (search*.x)$\n";
-        }
-        else {
-            std::cout << "Not found\n";
-        }
+    (lk: LightKey = (2), search:= example2.find(lk))
+    if search != example2.end() {
+        std::cout << "Found (search*.x)$\n";
+    }
+    else {
+        std::cout << "Not found\n";
     }
 }
 ```
