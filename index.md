@@ -31,4 +31,4 @@ table, th, td {
 |  | [list](/container/list.md){: .m-0 .p-0 .pl-4 } - [forward_list](/container/forward_list.md){: .m-0 .p-0 } | [atomic](/atomic/atomic.md){: .m-0 .p-0 .pl-4 } - [atomic_flag](/atomic/atomic_flag.md){: .m-0 .p-0 } |
 |  | [map](/container/map.md){: .m-0 .p-0 .pl-4 } - [multimap](/container/multimap.md){: .m-0 .p-0 } - [set](/container/set.md){: .m-0 .p-0 } - [multiset](/container/multiset.md){: .m-0 .p-0 } | [Mutual exclusion](/thread/index.md#mutex){: .m-0 .p-0 .pl-4 } - [Semaphores](/thread/index.md#semaphores){: .m-0 .p-0 } |
 |  | [unordered_map](/container/unordered_map.md){: .m-0 .p-0 .pl-4 } | [Condition variables](/thread/index.md#condition-variables){: .m-0 .p-0 .pl-4 } - [Futures](/thread/index.md#futures){: .m-0 .p-0 } |
-|  |  | [latch](/thread/latch.md){: .m-0 .p-0 .pl-4 } - [barrier](/thread/barrier.md){: .m-0 .p-0 } |
+|  | [unordered_multimap](/container/unordered_multimap.md){: .m-0 .p-0 .pl-4 } | [latch](/thread/latch.md){: .m-0 .p-0 .pl-4 } - [barrier](/thread/barrier.md){: .m-0 .p-0 } |
