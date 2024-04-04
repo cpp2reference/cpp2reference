@@ -40,4 +40,6 @@ cppreference: /container
 
 [unordered_map](unordered_map.md)
 
+[unordered_multiset](unordered_multiset.md)
+
 [unordered_multimap](unordered_multimap.md)
