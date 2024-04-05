@@ -43,3 +43,7 @@ cppreference: /container
 [unordered_multiset](unordered_multiset.md)
 
 [unordered_multimap](unordered_multimap.md)
+
+## <a id="adaptors"></a> Container adaptors
+
+[stack](stack.md)
