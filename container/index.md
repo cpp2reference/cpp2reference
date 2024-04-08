@@ -47,3 +47,7 @@ cppreference: /container
 ## <a id="adaptors"></a> Container adaptors
 
 [stack](stack.md)
+
+## <a id="views"></a> Views
+
+[span](span.md)
