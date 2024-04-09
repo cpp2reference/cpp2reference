@@ -35,4 +35,4 @@ table, th, td {
 |                                                                          | [unordered_set](/container/unordered_set.md){: .m-0 .p-0 .pl-4 }           |  |
 |                                                                          | [unordered_multiset](/container/unordered_multiset.md){: .m-0 .p-0 .pl-4 } |  |
 |                                                                          | [Container adaptors](/container/index.md#adaptors){: .m-0 .p-0 .pl-4 }     |  |
-|                                                                          | [span](/container/span.md){: .m-0 .p-0 .pl-4 }                             |  |
+|                                                                          | [span](/container/span.md){: .m-0 .p-0 .pl-4 } - [mdspan](/container/mdspan.md){: .m-0 .p-0 } |  |
