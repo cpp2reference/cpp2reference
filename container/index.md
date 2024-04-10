@@ -8,6 +8,13 @@ has_toc: false
 cppreference: /container
 ---
 
+<style>
+p {
+    padding: 0px;
+    margin: 0px;
+}
+</style>
+
 # Containers library
 
 {% include cppreference_link.html %}
@@ -47,6 +54,8 @@ cppreference: /container
 ## <a id="adaptors"></a> Container adaptors
 
 [stack](stack.md)
+
+[queue](queue.md)
 
 ## <a id="views"></a> Views
 

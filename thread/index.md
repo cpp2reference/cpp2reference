@@ -8,6 +8,13 @@ has_toc: false
 cppreference: /thread
 ---
 
+<style>
+p {
+    padding: 0px;
+    margin: 0px;
+}
+</style>
+
 # Concurrency support library
 
 {% include cppreference_link.html %}

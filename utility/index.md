@@ -8,6 +8,13 @@ has_toc: false
 cppreference: /utility
 ---
 
+<style>
+p {
+    padding: 0px;
+    margin: 0px;
+}
+</style>
+
 # Utility library
 
 {% include cppreference_link.html %}
