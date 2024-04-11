@@ -57,6 +57,8 @@ p {
 
 [queue](queue.md)
 
+[priority_queue](priority_queue.md)
+
 ## <a id="views"></a> Views
 
 [span](span.md)
