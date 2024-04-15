@@ -23,3 +23,5 @@ p {
 ## <a id="program-termination"></a> Program termination
 
 [abort](abort.md)
+
+[exit](exit.md)
