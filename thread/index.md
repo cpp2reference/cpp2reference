@@ -27,9 +27,9 @@ p {
 
 ## <a id="atomic"></a> Atomic operations
 
-[atomic](/atomic/atomic.md)
+[atomic](/atomic/atomic)
 
-[atomic_flag](/atomic/atomic_flag.md)
+[atomic_flag](/atomic/atomic_flag)
 
 ## <a id="mutex"></a> Mutual exclusion
 
