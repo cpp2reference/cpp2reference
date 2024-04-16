@@ -25,3 +25,5 @@ p {
 [abort](abort.md)
 
 [exit](exit.md)
+
+[quick_exit](quick_exit.md)
