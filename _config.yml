@@ -50,3 +50,7 @@ callouts:
   warning:
     title: Warning
     color: red
+
+# Include some markdown files with leading underscores, e.g. for std::_Exit
+include:
+  _*.md
