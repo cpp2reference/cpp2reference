@@ -31,3 +31,5 @@ p {
 [_Exit](_Exit.md)
 
 [atexit](atexit.md)
+
+[at_quick_exit](at_quick_exit.md)
