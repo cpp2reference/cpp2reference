@@ -53,4 +53,4 @@ callouts:
 
 # Include some markdown files with leading underscores, e.g. for std::_Exit
 include:
-  _*.md
+  - _*.md

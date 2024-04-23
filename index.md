@@ -26,7 +26,9 @@ table, th, td {
    border-spacing: none;
 }
 </style>
-| [Language support library](/utility/index.md#language-support){: .fs-5 } | [Containers library](/container/index.md){: .fs-5 } | [Concurrency support library](/thread/index.md){: .fs-5 } |
+|                                                                          | [Strings library](/string/index.md){: .fs-5 }               |  |
+|                                                                          | [basic_string](/string/basic_string.md){: .m-0 .p-0 .pl-4 } |  |
+| [Language support library](/utility/index.md#language-support){: .fs-5 } | [Containers library](/container/index.md){: .fs-5 }                        | [Concurrency support library](/thread/index.md){: .fs-5 } |
 | [Program utilities](/utility/program/index.md){: .m-0 .p-0 .pl-4 }       | [vector](/container/vector.md){: .m-0 .p-0 .pl-4 } - [deque](/container/deque.md){: .m-0 .p-0 } - [array](/container/array.md){: .m-0 .p-0 } | [thread](/thread/thread.md){: .m-0 .p-0 .pl-4 } - [jthread](/thread/jthread.md){: .m-0 .p-0 } |
 | [source_location](/utility/source_location.md){: .m-0 .p-0 .pl-4 }       | [list](/container/list.md){: .m-0 .p-0 .pl-4 } - [forward_list](/container/forward_list.md){: .m-0 .p-0 } | [atomic](/atomic/atomic.md){: .m-0 .p-0 .pl-4 } - [atomic_flag](/atomic/atomic_flag.md){: .m-0 .p-0 } |
 |                                                                          | [map](/container/map.md){: .m-0 .p-0 .pl-4 } - [multimap](/container/multimap.md){: .m-0 .p-0 } - [set](/container/set.md){: .m-0 .p-0 } - [multiset](/container/multiset.md){: .m-0 .p-0 } | [Mutual exclusion](/thread/index.md#mutex){: .m-0 .p-0 .pl-4 } - [Semaphores](/thread/index.md#semaphores){: .m-0 .p-0 } |
