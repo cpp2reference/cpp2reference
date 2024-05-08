@@ -23,3 +23,6 @@ p {
 
 [basic_string](basic_string.md)
 
+## <a id="threads"></a> String view classes (`std::string_view` etc.)
+
+[basic_string_view](basic_string_view.md)
