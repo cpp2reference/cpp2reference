@@ -27,7 +27,7 @@ table, th, td {
 }
 </style>
 |                                                                          | [Strings library](/string/index.md){: .fs-5 }                              |  |
-|                                                                          | [basic_string](/string/basic_string.md){: .m-0 .p-0 .pl-4 }                |  |
+|                                                                          | [basic_string](/string/basic_string.md){: .m-0 .p-0 .pl-4 } - [char_traits](/string/char_traits.md){: .m-0 .p-0 }               |  |
 |                                                                          | [basic_string_view](/string/basic_string_view.md){: .m-0 .p-0 .pl-4 }      |  |
 | [Language support library](/utility/index.md#language-support){: .fs-5 } | [Containers library](/container/index.md){: .fs-5 }                        | [Concurrency support library](/thread/index.md){: .fs-5 } |
 | [Program utilities](/utility/program/index.md){: .m-0 .p-0 .pl-4 }       | [vector](/container/vector.md){: .m-0 .p-0 .pl-4 } - [deque](/container/deque.md){: .m-0 .p-0 } - [array](/container/array.md){: .m-0 .p-0 } | [thread](/thread/thread.md){: .m-0 .p-0 .pl-4 } - [jthread](/thread/jthread.md){: .m-0 .p-0 } |
