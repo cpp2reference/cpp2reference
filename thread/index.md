@@ -2,7 +2,7 @@
 layout: page
 title: Concurrency Support Library
 permalink: /thread/
-nav_order: 5
+nav_order: 6
 has_children: true
 has_toc: false
 cppreference: /thread
