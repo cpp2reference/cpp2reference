@@ -34,3 +34,5 @@ std::ranges::sort(v); // constrained algorithm
 ### <a id="batch"></a> Batch operations
 
 [for_each](for_each.md)
+
+[for_each_n](for_each_n.md)
