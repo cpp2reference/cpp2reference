@@ -35,4 +35,8 @@ std::ranges::sort(v); // constrained algorithm
 
 [for_each](for_each.md)
 
+[ranges::for_each](ranges/for_each.md)
+
 [for_each_n](for_each_n.md)
+
+[ranges::for_each_n](ranges/for_each_n.md)

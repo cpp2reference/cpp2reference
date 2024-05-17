@@ -23,3 +23,5 @@ p {
 ## <a id="nonmodifyingsequence"></a> Non-modifying sequence operations
 
 [ranges::for_each](for_each.md)
+
+[ranges::for_each_n](for_each_n.md)
