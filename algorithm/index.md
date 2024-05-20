@@ -40,3 +40,11 @@ std::ranges::sort(v); // constrained algorithm
 [for_each_n](for_each_n.md)
 
 [ranges::for_each_n](ranges/for_each_n.md)
+
+### <a id="search"></a> Search operations
+
+[all_of](all_any_none_of.md)
+
+[any_of](all_any_none_of.md)
+
+[none_of](all_any_none_of.md)
