@@ -33,18 +33,33 @@ std::ranges::sort(v); // constrained algorithm
 
 ### <a id="batch"></a> Batch operations
 
-[for_each](for_each.md)
+---
+{: .my-2 }
 
-[ranges::for_each](ranges/for_each.md)
+[`for_each`](for_each.md)
 
-[for_each_n](for_each_n.md)
+[`ranges::for_each`](ranges/for_each.md)
 
-[ranges::for_each_n](ranges/for_each_n.md)
+[`for_each_n`](for_each_n.md)
+
+[`ranges::for_each_n`](ranges/for_each_n.md)
 
 ### <a id="search"></a> Search operations
 
-[all_of](all_any_none_of.md)
+---
+{: .my-2 }
 
-[any_of](all_any_none_of.md)
+[`all_of`](all_any_none_of.md)
 
-[none_of](all_any_none_of.md)
+[`any_of`](all_any_none_of.md)
+
+[`none_of`](all_any_none_of.md)
+
+---
+{: .my-2 }
+
+[`ranges::all_of`](ranges/all_any_none_of.md)
+
+[`ranges::any_of`](ranges/all_any_none_of.md)
+
+[`ranges::none_of`](ranges/all_any_none_of.md)

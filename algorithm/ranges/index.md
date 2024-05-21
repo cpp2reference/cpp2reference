@@ -22,6 +22,18 @@ p {
 
 ## <a id="nonmodifyingsequence"></a> Non-modifying sequence operations
 
-[ranges::for_each](for_each.md)
+---
+{: .my-2 }
 
-[ranges::for_each_n](for_each_n.md)
+[`ranges::all_of`](all_any_none_of.md)
+
+[`ranges::any_of`](all_any_none_of.md)
+
+[`ranges::none_of`](all_any_none_of.md)
+
+---
+{: .my-2 }
+
+[`ranges::for_each`](for_each.md)
+
+[`ranges::for_each_n`](for_each_n.md)
