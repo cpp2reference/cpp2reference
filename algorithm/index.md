@@ -63,3 +63,10 @@ std::ranges::sort(v); // constrained algorithm
 [`ranges::any_of`](ranges/all_any_none_of.md)
 
 [`ranges::none_of`](ranges/all_any_none_of.md)
+
+---
+{: .my-2 }
+
+[`ranges::contains`](ranges/contains.md)
+
+[`ranges::contains_subrange`](ranges/contains.md)

@@ -37,3 +37,10 @@ p {
 [`ranges::for_each`](for_each.md)
 
 [`ranges::for_each_n`](for_each_n.md)
+
+---
+{: .my-2 }
+
+[`ranges::contains`](contains.md)
+
+[`ranges::contains_subrange`](contains.md)
