@@ -70,3 +70,12 @@ std::ranges::sort(v); // constrained algorithm
 [`ranges::contains`](ranges/contains.md)
 
 [`ranges::contains_subrange`](ranges/contains.md)
+
+---
+{: .my-2 }
+
+[`find`](find.md)
+
+[`find_if`](find.md)
+
+[`find_if_not`](find.md)
