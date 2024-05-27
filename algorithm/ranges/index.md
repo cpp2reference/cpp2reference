@@ -41,6 +41,15 @@ p {
 ---
 {: .my-2 }
 
+[`ranges::find`](find.md)
+
+[`ranges::find_if`](find.md)
+
+[`ranges::find_if_not`](find.md)
+
+---
+{: .my-2 }
+
 [`ranges::contains`](contains.md)
 
 [`ranges::contains_subrange`](contains.md)
