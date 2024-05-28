@@ -50,6 +50,15 @@ p {
 ---
 {: .my-2 }
 
+[`ranges::find_last`](find_last.md)
+
+[`ranges::find_last_if`](find_last.md)
+
+[`ranges::find_last_if_not`](find_last.md)
+
+---
+{: .my-2 }
+
 [`ranges::contains`](contains.md)
 
 [`ranges::contains_subrange`](contains.md)

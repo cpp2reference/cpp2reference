@@ -88,3 +88,12 @@ std::ranges::sort(v); // constrained algorithm
 [`ranges::find_if`](ranges/find.md)
 
 [`ranges::find_if_not`](ranges/find.md)
+
+---
+{: .my-2 }
+
+[`ranges::find_last`](ranges/find_last.md)
+
+[`ranges::find_last_if`](ranges/find_last.md)
+
+[`ranges::find_last_if_not`](ranges/find_last.md)
