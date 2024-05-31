@@ -107,3 +107,8 @@ std::ranges::sort(v); // constrained algorithm
 {: .my-2 }
 
 [`ranges::find_end`](ranges/find_end.md)
+
+---
+{: .my-2 }
+
+[`find_first_of`](find_first_of.md)

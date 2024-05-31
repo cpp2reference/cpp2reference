@@ -6,7 +6,7 @@ parent: Algorithms Library
 cppreference: /algorithm/find_end
 godbolt: https://cpp2.godbolt.org/z/667ezvY6c
 ---
-# find_end
+# std::find_end
 
 {% include cppreference_link.html %}
 
