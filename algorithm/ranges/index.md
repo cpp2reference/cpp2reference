@@ -64,6 +64,11 @@ p {
 ---
 {: .my-2 }
 
+[`ranges::find_first_of`](find_first_of.md)
+
+---
+{: .my-2 }
+
 [`ranges::contains`](contains.md)
 
 [`ranges::contains_subrange`](contains.md)
