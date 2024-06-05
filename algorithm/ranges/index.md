@@ -69,6 +69,11 @@ p {
 ---
 {: .my-2 }
 
+[`ranges::adjacent_find`](adjacent_find.md)
+
+---
+{: .my-2 }
+
 [`ranges::contains`](contains.md)
 
 [`ranges::contains_subrange`](contains.md)
