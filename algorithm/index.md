@@ -127,3 +127,10 @@ std::ranges::sort(v); // constrained algorithm
 {: .my-2 }
 
 [`ranges::adjacent_find`](ranges/adjacent_find.md)
+
+---
+{: .my-2 }
+
+[`count`](count.md)
+
+[`count_if`](count.md)
