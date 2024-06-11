@@ -36,7 +36,17 @@ p {
 
 [`ranges::for_each`](for_each.md)
 
+---
+{: .my-2 }
+
 [`ranges::for_each_n`](for_each_n.md)
+
+---
+{: .my-2 }
+
+[`ranges::count`](count.md)
+
+[`ranges::count_if`](count.md)
 
 ---
 {: .my-2 }
