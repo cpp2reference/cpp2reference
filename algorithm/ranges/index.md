@@ -51,6 +51,11 @@ p {
 ---
 {: .my-2 }
 
+[`ranges::mismatch`](mismatch.md)
+
+---
+{: .my-2 }
+
 [`ranges::find`](find.md)
 
 [`ranges::find_if`](find.md)
