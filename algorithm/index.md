@@ -151,3 +151,8 @@ std::ranges::sort(v); // constrained algorithm
 {: .my-2 }
 
 [`ranges::mismatch`](ranges/mismatch.md)
+
+---
+{: .my-2 }
+
+[`equal`](equal.md)
