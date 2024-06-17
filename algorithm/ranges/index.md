@@ -56,6 +56,11 @@ p {
 ---
 {: .my-2 }
 
+[`ranges::equal`](equal.md)
+
+---
+{: .my-2 }
+
 [`ranges::find`](find.md)
 
 [`ranges::find_if`](find.md)
