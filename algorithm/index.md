@@ -166,3 +166,8 @@ std::ranges::sort(v); // constrained algorithm
 {: .my-2 }
 
 [`search`](search.md)
+
+---
+{: .my-2 }
+
+[`ranges::search`](ranges/search.md)

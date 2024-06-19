@@ -94,6 +94,11 @@ p {
 ---
 {: .my-2 }
 
+[`ranges::search`](search.md)
+
+---
+{: .my-2 }
+
 [`ranges::contains`](contains.md)
 
 [`ranges::contains_subrange`](contains.md)
