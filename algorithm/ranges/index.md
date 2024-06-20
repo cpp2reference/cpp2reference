@@ -99,6 +99,11 @@ p {
 ---
 {: .my-2 }
 
+[`ranges::search_n`](search_n.md)
+
+---
+{: .my-2 }
+
 [`ranges::contains`](contains.md)
 
 [`ranges::contains_subrange`](contains.md)
