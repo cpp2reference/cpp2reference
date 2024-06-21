@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Concurrency Support Library
+title: Concurrency Support library
 permalink: /thread/
 nav_order: 7
 has_children: true

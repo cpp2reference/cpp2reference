@@ -2,7 +2,7 @@
 layout: page
 title: std::atomic
 permalink: /atomic/atomic/
-parent: Concurrency Support Library
+parent: Concurrency Support library
 cppreference: /atomic/atomic
 godbolt: https://cpp2.godbolt.org/z/caxPaPxe5
 ---

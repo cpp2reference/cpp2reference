@@ -2,7 +2,7 @@
 layout: page
 title: std::jthread
 permalink: /thread/jthread/
-parent: Concurrency Support Library
+parent: Concurrency Support library
 cppreference: /thread/jthread
 godbolt: https://cpp2.godbolt.org/z/4v6PP6Yxx
 ---

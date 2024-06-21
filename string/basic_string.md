@@ -2,7 +2,7 @@
 layout: page
 title: std::basic_string
 permalink: /string/basic_string/
-parent: Strings Library
+parent: Strings library
 cppreference: /string/basic_string
 godbolt: https://cpp2.godbolt.org/z/qvYTv1ahG
 ---

@@ -2,7 +2,7 @@
 layout: page
 title: std::mutex
 permalink: /thread/mutex/
-parent: Concurrency Support Library
+parent: Concurrency Support library
 cppreference: /thread/mutex
 godbolt: https://cpp2.godbolt.org/z/ne5Y4T1ch
 ---

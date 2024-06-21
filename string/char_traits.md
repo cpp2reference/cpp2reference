@@ -2,7 +2,7 @@
 layout: page
 title: std::char_traits
 permalink: /string/char_traits/
-parent: Strings Library
+parent: Strings library
 cppreference: /string/char_traits
 godbolt: https://cpp2.godbolt.org/z/rnhWGbGvh
 ---

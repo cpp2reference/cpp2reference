@@ -2,7 +2,7 @@
 layout: page
 title: std::barrier
 permalink: /thread/barrier/
-parent: Concurrency Support Library
+parent: Concurrency Support library
 cppreference: /thread/barrier
 godbolt: https://cpp2.godbolt.org/z/4de3Eqn39
 ---

@@ -2,7 +2,7 @@
 layout: page
 title: std::future
 permalink: /thread/future/
-parent: Concurrency Support Library
+parent: Concurrency Support library
 cppreference: /thread/future
 godbolt: https://cpp2.godbolt.org/z/7e8beYqhe
 ---

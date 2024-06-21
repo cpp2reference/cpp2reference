@@ -2,7 +2,7 @@
 layout: page
 title: std::condition_variable
 permalink: /thread/condition_variable/
-parent: Concurrency Support Library
+parent: Concurrency Support library
 cppreference: /thread/condition_variable
 godbolt: https://cpp2.godbolt.org/z/W5h4zozhW
 ---

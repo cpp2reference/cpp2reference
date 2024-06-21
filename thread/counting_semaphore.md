@@ -2,7 +2,7 @@
 layout: page
 title: std::counting_semaphore, std::binary_semaphore
 permalink: /thread/counting_semaphore/
-parent: Concurrency Support Library
+parent: Concurrency Support library
 cppreference: /thread/counting_semaphore
 godbolt: https://cpp2.godbolt.org/z/aY8Gn4Pqh
 ---

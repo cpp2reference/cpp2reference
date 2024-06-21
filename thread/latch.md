@@ -2,7 +2,7 @@
 layout: page
 title: std::latch
 permalink: /thread/latch/
-parent: Concurrency Support Library
+parent: Concurrency Support library
 cppreference: /thread/latch
 godbolt: https://cpp2.godbolt.org/z/5KoToMb99
 ---

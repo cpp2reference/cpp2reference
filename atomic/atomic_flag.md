@@ -2,7 +2,7 @@
 layout: page
 title: std::atomic_flag
 permalink: /atomic/atomic_flag/
-parent: Concurrency Support Library
+parent: Concurrency Support library
 cppreference: /atomic/atomic_flag
 godbolt: https://cpp2.godbolt.org/z/9KTWe8nsM
 ---

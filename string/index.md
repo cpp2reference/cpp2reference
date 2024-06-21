@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Strings Library
+title: Strings library
 permalink: /string/
 nav_order: 4
 has_children: true
