@@ -26,6 +26,8 @@ table, th, td {
    border-spacing: none;
 }
 </style>
+|                                                                          |                                                                            | [Iterators library](/iterator/index.md){: .fs-5 }   |
+|                                                                          |                                                                            | [Ranges library](/ranges/index.md){: .fs-5 }        |
 |                                                                          | [Strings library](/string/index.md){: .fs-5 }                              | [Algorithms library](/algorithm/index.md){: .fs-5 } |
 |                                                                          | [basic_string](/string/basic_string.md){: .m-0 .p-0 .pl-4 } - [char_traits](/string/char_traits.md){: .m-0 .p-0 }               | [Constrained algorithms](/algorithm/ranges/index.md){: .m-0 .p-0 .pl-4 } |
 |                                                                          | [basic_string_view](/string/basic_string_view.md){: .m-0 .p-0 .pl-4 }      |  |
