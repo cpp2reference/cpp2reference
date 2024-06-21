@@ -3,7 +3,7 @@ layout: page
 title: std::ranges::find_last, std::ranges::find_last_if, std::ranges::find_last_if_not
 permalink: /algorithm/ranges/find_last/
 parent: Constrained algorithms
-grand_parent: Algorithms Library
+grand_parent: Algorithms library
 cppreference: /algorithm/ranges/find_last
 godbolt: https://cpp2.godbolt.org/z/8essz4xab
 ---

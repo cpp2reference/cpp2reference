@@ -3,7 +3,7 @@ layout: page
 title: std::ranges::mismatch
 permalink: /algorithm/ranges/mismatch/
 parent: Constrained algorithms
-grand_parent: Algorithms Library
+grand_parent: Algorithms library
 cppreference: /algorithm/ranges/mismatch
 godbolt: https://cpp2.godbolt.org/z/GTo1Won18
 ---

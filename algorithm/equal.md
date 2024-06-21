@@ -2,7 +2,7 @@
 layout: page
 title: std::equal
 permalink: /algorithm/equal/
-parent: Algorithms Library
+parent: Algorithms library
 cppreference: /algorithm/equal
 godbolt: https://cpp2.godbolt.org/z/15G73a1fc
 ---

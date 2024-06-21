@@ -2,7 +2,7 @@
 layout: page
 title: std::search_n
 permalink: /algorithm/search_n/
-parent: Algorithms Library
+parent: Algorithms library
 cppreference: /algorithm/search_n
 godbolt: https://cpp2.godbolt.org/z/fsYcaGTj1
 ---

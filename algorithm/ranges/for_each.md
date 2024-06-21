@@ -3,7 +3,7 @@ layout: page
 title: std::ranges::for_each
 permalink: /algorithm/ranges/for_each/
 parent: Constrained algorithms
-grand_parent: Algorithms Library
+grand_parent: Algorithms library
 cppreference: /algorithm/ranges/for_each
 godbolt: https://cpp2.godbolt.org/z/Wcnxxj1vM
 ---

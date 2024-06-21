@@ -3,7 +3,7 @@ layout: page
 title: std::ranges::adjacent_find
 permalink: /algorithm/ranges/adjacent_find/
 parent: Constrained algorithms
-grand_parent: Algorithms Library
+grand_parent: Algorithms library
 cppreference: /algorithm/ranges/adjacent_find
 godbolt: https://cpp2.godbolt.org/z/MEeb5f8bW
 ---

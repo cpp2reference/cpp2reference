@@ -2,7 +2,7 @@
 layout: page
 title: std::all_of, std::any_of, std::none_of
 permalink: /algorithm/all_any_none_of/
-parent: Algorithms Library
+parent: Algorithms library
 cppreference: /algorithm/all_any_none_of
 godbolt: https://cpp2.godbolt.org/z/565jqjPa6
 ---

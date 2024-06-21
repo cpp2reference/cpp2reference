@@ -3,7 +3,7 @@ layout: page
 title: std::ranges::search
 permalink: /algorithm/ranges/search/
 parent: Constrained algorithms
-grand_parent: Algorithms Library
+grand_parent: Algorithms library
 cppreference: /algorithm/ranges/search
 godbolt: https://cpp2.godbolt.org/z/4c99Y34MM
 ---

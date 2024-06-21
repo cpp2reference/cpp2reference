@@ -3,7 +3,7 @@ layout: page
 title: std::ranges::find, std::ranges::find_if, std::ranges::find_if_not
 permalink: /algorithm/ranges/find/
 parent: Constrained algorithms
-grand_parent: Algorithms Library
+grand_parent: Algorithms library
 cppreference: /algorithm/ranges/find
 godbolt: https://cpp2.godbolt.org/z/h98fPh8oG
 ---

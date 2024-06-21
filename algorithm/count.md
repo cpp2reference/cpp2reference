@@ -2,7 +2,7 @@
 layout: page
 title: std::count, std::count_if
 permalink: /algorithm/count/
-parent: Algorithms Library
+parent: Algorithms library
 cppreference: /algorithm/count
 godbolt: https://cpp2.godbolt.org/z/rT5PY657d
 ---

@@ -3,7 +3,7 @@ layout: page
 title: std::ranges::find_first_of
 permalink: /algorithm/ranges/find_first_of/
 parent: Constrained algorithms
-grand_parent: Algorithms Library
+grand_parent: Algorithms library
 cppreference: /algorithm/ranges/find_first_of
 godbolt: https://cpp2.godbolt.org/z/o1x3Pde9h
 ---

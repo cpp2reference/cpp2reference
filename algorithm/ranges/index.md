@@ -2,7 +2,7 @@
 layout: page
 title: Constrained algorithms
 permalink: /algorithm/ranges/
-parent: Algorithms Library
+parent: Algorithms library
 nav_order: 1
 has_children: true
 has_toc: false

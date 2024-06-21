@@ -2,7 +2,7 @@
 layout: page
 title: std::find, std::find_if, std::find_if_not
 permalink: /algorithm/find/
-parent: Algorithms Library
+parent: Algorithms library
 cppreference: /algorithm/find
 godbolt: https://cpp2.godbolt.org/z/Gzd4Phxqv
 ---

@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Algorithms Library
+title: Algorithms library
 permalink: /algorithm/
 nav_order: 3
 has_children: true

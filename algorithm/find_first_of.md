@@ -2,7 +2,7 @@
 layout: page
 title: std::find_first_of
 permalink: /algorithm/find_first_of/
-parent: Algorithms Library
+parent: Algorithms library
 cppreference: /algorithm/find_first_of
 godbolt: https://cpp2.godbolt.org/z/56nWfr4Mc
 ---

@@ -3,7 +3,7 @@ layout: page
 title: std::ranges::contains, std::ranges::contains_subrange
 permalink: /algorithm/ranges/contains/
 parent: Constrained algorithms
-grand_parent: Algorithms Library
+grand_parent: Algorithms library
 cppreference: /algorithm/ranges/contains
 godbolt: https://cpp2.godbolt.org/z/h6dGfdxeP
 ---

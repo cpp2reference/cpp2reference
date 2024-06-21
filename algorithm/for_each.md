@@ -2,7 +2,7 @@
 layout: page
 title: std::for_each
 permalink: /algorithm/for_each/
-parent: Algorithms Library
+parent: Algorithms library
 cppreference: /algorithm/for_each
 godbolt: https://cpp2.godbolt.org/z/Ebe8Mjas9
 ---

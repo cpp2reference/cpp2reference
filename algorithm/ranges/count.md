@@ -3,7 +3,7 @@ layout: page
 title: std::ranges::count, std::ranges::count_if
 permalink: /algorithm/ranges/count/
 parent: Constrained algorithms
-grand_parent: Algorithms Library
+grand_parent: Algorithms library
 cppreference: /algorithm/ranges/count
 godbolt: https://cpp2.godbolt.org/z/PvxcEEnc5
 ---

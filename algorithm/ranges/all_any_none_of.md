@@ -3,7 +3,7 @@ layout: page
 title: std::ranges::all_of, std::ranges::any_of, std::ranges::none_of
 permalink: /algorithm/ranges/all_any_none_of/
 parent: Constrained algorithms
-grand_parent: Algorithms Library
+grand_parent: Algorithms library
 cppreference: /algorithm/ranges/all_any_none_of
 godbolt: https://cpp2.godbolt.org/z/5P8GqYK9r
 ---

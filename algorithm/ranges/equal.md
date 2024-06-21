@@ -3,7 +3,7 @@ layout: page
 title: std::ranges::equal
 permalink: /algorithm/ranges/equal/
 parent: Constrained algorithms
-grand_parent: Algorithms Library
+grand_parent: Algorithms library
 cppreference: /algorithm/ranges/equal
 godbolt: https://cpp2.godbolt.org/z/YK3z4GT6n
 ---

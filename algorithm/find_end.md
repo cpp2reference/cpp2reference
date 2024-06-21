@@ -2,7 +2,7 @@
 layout: page
 title: std::find_end
 permalink: /algorithm/find_end/
-parent: Algorithms Library
+parent: Algorithms library
 cppreference: /algorithm/find_end
 godbolt: https://cpp2.godbolt.org/z/667ezvY6c
 ---

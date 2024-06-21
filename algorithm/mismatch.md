@@ -2,7 +2,7 @@
 layout: page
 title: std::mismatch
 permalink: /algorithm/mismatch/
-parent: Algorithms Library
+parent: Algorithms library
 cppreference: /algorithm/mismatch
 godbolt: https://cpp2.godbolt.org/z/bTsn9fY3T
 ---

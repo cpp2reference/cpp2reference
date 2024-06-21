@@ -2,7 +2,7 @@
 layout: page
 title: std::adjacent_find
 permalink: /algorithm/adjacent_find/
-parent: Algorithms Library
+parent: Algorithms library
 cppreference: /algorithm/adjacent_find
 godbolt: https://cpp2.godbolt.org/z/7eYcxcdnT
 ---
