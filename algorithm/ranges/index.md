@@ -107,3 +107,8 @@ p {
 [`ranges::contains`](contains.md)
 
 [`ranges::contains_subrange`](contains.md)
+
+---
+{: .my-2 }
+
+[`ranges::starts_with`](starts_with.md)
