@@ -186,3 +186,8 @@ std::ranges::sort(v); // constrained algorithm
 {: .my-2 }
 
 [`ranges::starts_with`](ranges/starts_with.md)
+
+---
+{: .my-2 }
+
+[`ranges::ends_with`](ranges/ends_with.md)

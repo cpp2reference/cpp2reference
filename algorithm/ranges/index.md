@@ -112,3 +112,8 @@ p {
 {: .my-2 }
 
 [`ranges::starts_with`](starts_with.md)
+
+---
+{: .my-2 }
+
+[`ranges::ends_with`](ends_with.md)
