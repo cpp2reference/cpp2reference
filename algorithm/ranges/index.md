@@ -117,3 +117,10 @@ p {
 {: .my-2 }
 
 [`ranges::ends_with`](ends_with.md)
+
+# Constrained fold operations
+
+---
+{: .my-2 }
+
+[`ranges::fold_left`](fold_left.md)

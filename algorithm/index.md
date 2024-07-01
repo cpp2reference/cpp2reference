@@ -191,3 +191,10 @@ std::ranges::sort(v); // constrained algorithm
 {: .my-2 }
 
 [`ranges::ends_with`](ranges/ends_with.md)
+
+### <a id="fold"></a> Fold operations
+
+---
+{: .my-2 }
+
+[`ranges::fold_left`](ranges/fold_left.md)
