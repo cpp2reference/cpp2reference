@@ -203,3 +203,8 @@ std::ranges::sort(v); // constrained algorithm
 {: .my-2 }
 
 [`ranges::fold_left_first`](ranges/fold_left_first.md)
+
+---
+{: .my-2 }
+
+[`ranges::fold_right`](ranges/fold_right.md)
