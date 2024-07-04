@@ -134,3 +134,8 @@ p {
 {: .my-2 }
 
 [`ranges::fold_right`](fold_right.md)
+
+---
+{: .my-2 }
+
+[`ranges::fold_right_last`](fold_right_last.md)
