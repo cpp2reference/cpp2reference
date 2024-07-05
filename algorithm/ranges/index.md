@@ -139,3 +139,8 @@ p {
 {: .my-2 }
 
 [`ranges::fold_right_last`](fold_right_last.md)
+
+---
+{: .my-2 }
+
+[`ranges::fold_left_with_iter`](fold_left_with_iter.md)
