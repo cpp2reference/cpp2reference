@@ -223,3 +223,14 @@ std::ranges::sort(v); // constrained algorithm
 {: .my-2 }
 
 [`ranges::fold_left_first_with_iter`](ranges/fold_left_first_with_iter.md)
+
+## <a id="modifyingsequence"></a> Modifying sequence operations
+
+### <a id="copy"></a> Copy operations
+
+---
+{: .my-2 }
+
+[`copy`](copy.md)
+
+[`copy_if`](copy.md)
