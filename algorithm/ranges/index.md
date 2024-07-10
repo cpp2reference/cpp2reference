@@ -118,6 +118,15 @@ p {
 
 [`ranges::ends_with`](ends_with.md)
 
+## <a id="modifyingsequence"></a> Modifying sequence operations
+
+---
+{: .my-2 }
+
+[`ranges::copy`](copy.md)
+
+[`ranges::copy_if`](copy.md)
+
 # Constrained fold operations
 
 ---

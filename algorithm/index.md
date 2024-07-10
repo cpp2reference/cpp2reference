@@ -234,3 +234,10 @@ std::ranges::sort(v); // constrained algorithm
 [`copy`](copy.md)
 
 [`copy_if`](copy.md)
+
+---
+{: .my-2 }
+
+[`ranges::copy`](ranges/copy.md)
+
+[`ranges::copy_if`](ranges/copy.md)
