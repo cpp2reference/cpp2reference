@@ -256,3 +256,8 @@ std::ranges::sort(v); // constrained algorithm
 {: .my-2 }
 
 [`copy_backward`](copy_backward.md)
+
+---
+{: .my-2 }
+
+[`ranges::copy_backward`](ranges/copy_backward.md)
