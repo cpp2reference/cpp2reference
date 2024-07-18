@@ -137,6 +137,11 @@ p {
 
 [`ranges::copy_backward`](copy_backward.md)
 
+---
+{: .my-2 }
+
+[`ranges::move`](move.md)
+
 # Constrained fold operations
 
 ---
