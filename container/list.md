@@ -4,7 +4,6 @@ title: std::list
 permalink: /container/list/
 parent: Containers library
 cppreference: /container/list
-godbolt: https://cpp2.godbolt.org/z/fbjWY59oq
 ---
 # std::list
 
@@ -12,30 +11,11 @@ godbolt: https://cpp2.godbolt.org/z/fbjWY59oq
 
 ## Example
 
-{% include godbolt_example_link.html %}
+{% include godbolt/container/list.html %}
+{% include godbolt_example_link.html godbolt=url %}
 
 ```cpp
-main: () = {
-    // Create a list containing integers
-    l: std::list = (7, 5, 16, 8);
- 
-    // Add an integer to the front of the list
-    l.push_front(25);
-    // Add an integer to the back of the list
-    l.push_back(13);
- 
-    // Insert an integer before 16 by searching
-    it:= std::find(l.begin(), l.end(), 16);
-    if (it != l.end()) {
-        l.insert(it, 42);
-    }
- 
-    // Print out the list
-    std::cout << "l = { ";
-    for l do (n)
-        std::cout << "(n)$, ";
-    std::cout << "};\n";
-}
+{% include src/container/list.cpp2 %}
 ```
 {: .lh-0 }
 
