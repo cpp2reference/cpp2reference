@@ -1,0 +1,16 @@
+main: () = {
+    using namespace std::literals;
+
+    unicode: std::array = ("▀▄─"sv, "▄▀─"sv, "▀─▄"sv, "▄─▀"sv);
+ 
+    (copy y:= 0, copy p:= 0uz)
+    while y != 6 next y++ {
+        (copy x:= 0)
+        while x != 16 next x++ {
+            std::cout << unicode[p];
+        }
+        std::cout << '\n';
+
+        p = ((p + 1) % 4);
+    }
+}

@@ -1,0 +1,16 @@
+log: (message: std::string_view, location: std::source_location) = {
+    file_name:= location.file_name();
+    line:=      location.line();
+    col:=       location.column();
+    func:=      location.function_name();
+    std::clog << "file: (file_name)$((line)$:(col)$) `(func)$`: (message)$\n";
+}
+ 
+fun: (x) = {
+    log(x, std::source_location::current());
+}
+ 
+main: () = {
+    log("Hello world!", std::source_location::current());
+    fun("Hello Cpp2!");
+}

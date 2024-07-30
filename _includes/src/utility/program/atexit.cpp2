@@ -1,0 +1,20 @@
+atexit_handler_1: () = {
+    std::cout << "At exit #1\n";
+}
+
+atexit_handler_2: () = {
+    std::cout << "At exit #2\n";
+}
+
+main: () -> int = {
+    result_1: const int = std::atexit(atexit_handler_1);
+    result_2: const int = std::atexit(atexit_handler_2);
+ 
+    if result_1 || result_2 {
+        std::cerr << "Registration failed!\n";
+        return EXIT_FAILURE;
+    }
+ 
+    std::cout << "Returning from main...\n";
+    return EXIT_SUCCESS;
+}

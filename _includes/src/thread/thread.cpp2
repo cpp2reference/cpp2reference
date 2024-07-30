@@ -1,0 +1,23 @@
+foo: () = {
+    // simulate expensive operation
+    std::this_thread::sleep_for(std::chrono::seconds(1));
+}
+ 
+bar: () = {
+    // simulate expensive operation
+    std::this_thread::sleep_for(std::chrono::seconds(1));
+}
+ 
+main: () = {
+    std::cout << "starting first helper...\n";
+    helper1: std::thread = (foo);
+ 
+    std::cout << "starting second helper...\n";
+    helper2: std::thread = (bar);
+ 
+    std::cout << "waiting for helpers to finish..." << std::endl;
+    helper1.join();
+    helper2.join();
+ 
+    std::cout << "done!\n";
+}

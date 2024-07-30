@@ -1,0 +1,32 @@
+Static: type = {
+    operator=: (move this) = {
+        std::cout << "Static destructor\n";
+    }
+}
+
+Local: type = {
+    operator=: (move this) = {
+        std::cout << "Local destructor\n";
+    }
+}
+
+Static static_variable; // Destructor of this object *will* be called
+
+atexit_handler: () = {
+    std::cout << "atexit handler\n";
+}
+
+main: () -> int = {
+    local_variable: Local = ();           // Destructor will *not* be called
+    result:= std::atexit(atexit_handler); // Handler will be called
+ 
+    if result != 0 {
+        std::cerr << "atexit registration failed\n";
+        return EXIT_FAILURE;
+    }
+ 
+    std::cout << "test\n";
+    std::exit(EXIT_FAILURE);
+ 
+    std::cout << "this line will *not* be executed\n";
+}

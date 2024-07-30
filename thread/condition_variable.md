@@ -4,7 +4,6 @@ title: std::condition_variable
 permalink: /thread/condition_variable/
 parent: Concurrency Support library
 cppreference: /thread/condition_variable
-godbolt: https://cpp2.godbolt.org/z/W5h4zozhW
 ---
 
 # std::condition_variable
@@ -13,54 +12,7 @@ godbolt: https://cpp2.godbolt.org/z/W5h4zozhW
 
 ## Example
 
-{% include godbolt_example_link.html %}
-
-```cpp
-m:         std::mutex = ();
-cv:        std::condition_variable = ();
-data:      std::string = ();
-ready:     bool = false;
-processed: bool = false;
-
-worker: () = {
-    (copy lk: std::unique_lock = (m))
-    {
-        cv.wait(lk, :() -> bool = ready);
-
-        std::cout << "Worker is processing data\n";
-        data += " after processing";
-
-        processed = true;
-        std::cout << "Worker thread signals data processing completed\n";
-    }
-    cv.notify_one();
-}
-
-main: () -> int = {
-    worker_thd: std::thread = (worker);
-
-    data = "Example data";
-
-    (copy _: std::lock_guard = (m))
-    {
-        ready = true;
-        std::cout << "main() signals data ready for processing\n";
-    }
-    cv.notify_one();
-
-    (copy lk: std::unique_lock = (m))
-    {
-        cv.wait(lk, :() -> bool = processed);
-    }
-
-    std::cout << "Back in main(), data = " << data << '\n';
-
-    worker_thd.join();
-
-    return 0;
-}
-```
-{: .lh-0 }
+{% include cpp2_example.html %}
 
 ## Output
 
