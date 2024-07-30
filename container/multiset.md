@@ -11,13 +11,7 @@ cppreference: /container/multiset
 
 ## Example
 
-{% include godbolt/container/multiset.html %}
-{% include godbolt_example_link.html godbolt=url %}
-
-```cpp
-{% include src/container/multiset.cpp2 %}
-```
-{: .lh-0 }
+{% include cpp2_example.html %}
 
 ## Output
 

@@ -11,13 +11,7 @@ cppreference: /container/unordered_map
 
 ## Example
 
-{% include godbolt/container/unordered_map.html %}
-{% include godbolt_example_link.html godbolt=url %}
-
-```cpp
-{% include src/container/unordered_map.cpp2 %}
-```
-{: .lh-0 }
+{% include cpp2_example.html %}
 
 ## Possible output
 

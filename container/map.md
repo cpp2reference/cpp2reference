@@ -11,13 +11,7 @@ cppreference: /container/map
 
 ## Example
 
-{% include godbolt/container/map.html %}
-{% include godbolt_example_link.html godbolt=url %}
-
-```cpp
-{% include src/container/map.cpp2 %}
-```
-{: .lh-0 }
+{% include cpp2_example.html %}
 
 ## Output
 

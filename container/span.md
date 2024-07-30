@@ -11,13 +11,7 @@ cppreference: /container/span
 
 ## Example
 
-{% include godbolt/container/span.html %}
-{% include godbolt_example_link.html godbolt=url %}
-
-```cpp
-{% include src/container/span.cpp2 %}
-```
-{: .lh-0 }
+{% include cpp2_example.html %}
 
 ## Output
 

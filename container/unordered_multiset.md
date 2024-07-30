@@ -11,13 +11,7 @@ cppreference: /container/unordered_multiset
 
 ## Example
 
-{% include godbolt/container/unordered_multiset.html %}
-{% include godbolt_example_link.html godbolt=url %}
-
-```cpp
-{% include src/container/unordered_multiset.cpp2 %}
-```
-{: .lh-0 }
+{% include cpp2_example.html %}
 
 ## Possible output
 

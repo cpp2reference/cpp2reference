@@ -11,13 +11,7 @@ cppreference: /container/forward_list
 
 ## Example
 
-{% include godbolt/container/forward_list.html %}
-{% include godbolt_example_link.html godbolt=url %}
-
-```cpp
-{% include src/container/forward_list.cpp2 %}
-```
-{: .lh-0 }
+{% include cpp2_example.html %}
 
 ## Output
 

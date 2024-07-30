@@ -11,13 +11,7 @@ cppreference: /container/multimap
 
 ## Example
 
-{% include godbolt/container/multimap.html %}
-{% include godbolt_example_link.html godbolt=url %}
-
-```cpp
-{% include src/container/multimap.cpp2 %}
-```
-{: .lh-0 }
+{% include cpp2_example.html %}
 
 ## Output
 

@@ -11,13 +11,7 @@ cppreference: /container/unordered_set
 
 ## Example
 
-{% include godbolt/container/unordered_set.html %}
-{% include godbolt_example_link.html godbolt=url %}
-
-```cpp
-{% include src/container/unordered_set.cpp2 %}
-```
-{: .lh-0 }
+{% include cpp2_example.html %}
 
 ## Possible output
 

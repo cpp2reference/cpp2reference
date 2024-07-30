@@ -11,13 +11,7 @@ cppreference: /container/deque
 
 ## Example
 
-{% include godbolt/container/deque.html %}
-{% include godbolt_example_link.html godbolt=url %}
-
-```cpp
-{% include src/container/deque.cpp2 %}
-```
-{: .lh-0 }
+{% include cpp2_example.html %}
 
 ## Output
 

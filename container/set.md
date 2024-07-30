@@ -11,13 +11,7 @@ cppreference: /container/set
 
 ## Example
 
-{% include godbolt/container/set.html %}
-{% include godbolt_example_link.html godbolt=url %}
-
-```cpp
-{% include src/container/set.cpp2 %}
-```
-{: .lh-0 }
+{% include cpp2_example.html %}
 
 ## Output
 
