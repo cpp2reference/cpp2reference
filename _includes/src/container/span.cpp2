@@ -1,0 +1,67 @@
+slide: <T, N: std::size_t>(
+    s: std::span<T, N>, offset: std::size_t, width: std::size_t) -> _
+== {
+    count: std::size_t = 0;
+    if offset + width <= s.size() {
+        count = width;
+    }
+    return s.subspan(offset, count);
+}
+
+starts_with: <T, N: std::size_t, M: std::size_t>(
+    data: std::span<T, N>, prefix: std::span<T, M>) -> _
+== {
+    return data.size() >= prefix.size()
+        && std::equal(prefix.begin(), prefix.end(), data.begin());
+}
+
+ends_with: <T, N: std::size_t, M: std::size_t>(
+    data: std::span<T, N>, suffix: std::span<T, M>) -> _
+== {
+    suffix_size:= std::ssize(suffix);
+    return
+        data.size() >= suffix.size() &&
+        std::equal(data.end() - suffix_size, data.end(), suffix.end() - suffix_size);
+}
+
+contains: <T, N: std::size_t, M: std::size_t>(
+    span: std::span<T, N>, sub: std::span<T, M>) -> _
+== {
+    return std::ranges::search(span, sub).begin() != span.end();
+}
+
+println: (seq) = {
+    for seq do (elem) {
+        std::cout << "(elem)$ ";
+    }
+    std::cout << '\n';
+}
+
+main: () = {
+    a:     std::array  == (0, 1, 2, 3, 4, 5, 6, 7, 8);
+    b:     std::array  == (8, 7, 6);
+    width: std::size_t == 6;
+
+    (copy offset: std::size_t = 0)
+    while true next offset++ {
+        (s:= slide(std::span(a), offset, width))
+        if !s.empty() {
+            println(s);
+        }
+        else {
+            break;
+        }
+    }
+
+    static_assert(
+        ""
+        && starts_with(std::span(a), std::span(a.begin(), 4))
+        && starts_with(std::span(a.begin() + 1, 4), std::span(a.begin() + 1, 3))
+        && !starts_with(std::span(a), std::span(b))
+        && !starts_with(std::span(a.begin(), 8), std::span(a.begin() + 1, 3))
+        && ends_with(std::span(a), std::span(a.begin() + 6, 3))
+        && !ends_with(std::span(a), std::span(a.begin() + 6, 2))
+        && contains(std::span(a), std::span(a.begin() + 1, 4))
+        && !contains(std::span(a.begin(), 8), std::span(a.begin(), 9))
+    );
+}

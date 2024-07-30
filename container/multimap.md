@@ -4,7 +4,6 @@ title: std::multimap
 permalink: /container/multimap/
 parent: Containers library
 cppreference: /container/multimap
-godbolt: https://cpp2.godbolt.org/z/7s9dfdGze
 ---
 # std::multimap
 
@@ -12,23 +11,11 @@ godbolt: https://cpp2.godbolt.org/z/7s9dfdGze
 
 ## Example
 
-{% include godbolt_example_link.html %}
+{% include godbolt/container/multimap.html %}
+{% include godbolt_example_link.html godbolt=url %}
 
 ```cpp
-main: () = {
-    example: std::multimap = (
-        std::make_pair(1, 'a'),
-        std::make_pair(2, 'b'));
- 
-    for (2, 5) do (x) {
-        if example.contains(x) {
-            std::cout << "(x)$: Found\n";
-        }
-        else {
-            std::cout << "(x)$: Not found\n";
-        }
-    }
-}
+{% include src/container/multimap.cpp2 %}
 ```
 {: .lh-0 }
 

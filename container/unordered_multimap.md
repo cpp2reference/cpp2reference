@@ -4,7 +4,6 @@ title: std::unordered_multimap
 permalink: /container/unordered_multimap/
 parent: Containers library
 cppreference: /container/unordered_multimap
-godbolt: https://cpp2.godbolt.org/z/93PdzE8d4
 ---
 # std::unordered_multimap
 
@@ -12,37 +11,11 @@ godbolt: https://cpp2.godbolt.org/z/93PdzE8d4
 
 ## Example
 
-{% include godbolt_example_link.html %}
+{% include godbolt/container/unordered_multimap.html %}
+{% include godbolt_example_link.html godbolt=url %}
 
 ```cpp
-print: (comment: std::string_view, data) = {
-    std::cout << comment;
-    for data do (pair) {
-        std::cout << " (pair.first)$((pair.second)$)";
-    }
-    std::cout << '\n';
-}
-
-main: () = {
-    cont: std::unordered_multimap<int, char> = (
-        std::make_pair(1, 'a'),
-        std::make_pair(2, 'b'),
-        std::make_pair(3, 'c'),
-    );
- 
-    print("Start:", cont);
- 
-    // Extract node handle and change key
-    nh:= cont.extract(1);
-    nh.key() = 4;
- 
-    print("After extract and before insert:", cont);
- 
-    // Insert node handle back
-    cont.insert(move nh);
- 
-    print("End:", cont);
-}
+{% include src/container/unordered_multimap.cpp2 %}
 ```
 {: .lh-0 }
 

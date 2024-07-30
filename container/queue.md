@@ -4,7 +4,6 @@ title: std::queue
 permalink: /container/queue/
 parent: Containers library
 cppreference: /container/queue
-godbolt: https://cpp2.godbolt.org/z/5jszjqbWe
 ---
 # std::queue
 
@@ -12,33 +11,11 @@ godbolt: https://cpp2.godbolt.org/z/5jszjqbWe
 
 ## Example
 
-{% include godbolt_example_link.html %}
+{% include godbolt/container/queue.html %}
+{% include godbolt_example_link.html godbolt=url %}
 
 ```cpp
-main: () = {
-    q: std::queue<int> = ();
- 
-    q.push(0); // back pushes 0
-    q.push(1); // q = 0 1
-    q.push(2); // q = 0 1 2
-    q.push(3); // q = 0 1 2 3
- 
-    assert(q.front() == 0);
-    assert(q.back() == 3);
-    assert(q.size() == 4);
- 
-    q.pop(); // removes the front element, 0
-    assert(q.size() == 3);
- 
-    // Print and remove all elements. Note that std::queue does not
-    // support begin()/end(), so a range-for-loop cannot be used.
-    std::cout << "q: ";
-    while !q.empty() next q.pop() {
-        std::cout << "(q.front())$ ";
-    }
-    std::cout << '\n';
-    assert(q.size() == 0);
-}
+{% include src/container/queue.cpp2 %}
 ```
 {: .lh-0 }
 

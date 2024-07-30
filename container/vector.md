@@ -4,7 +4,6 @@ title: std::vector
 permalink: /container/vector/
 parent: Containers library
 cppreference: /container/vector
-godbolt: https://cpp2.godbolt.org/z/WTsMaWWrn
 ---
 # std::vector
 
@@ -12,25 +11,11 @@ godbolt: https://cpp2.godbolt.org/z/WTsMaWWrn
 
 ## Example
 
-{% include godbolt_example_link.html %}
+{% include godbolt/container/vector.html %}
+{% include godbolt_example_link.html godbolt=url %}
 
 ```cpp
-main: () = {
-    // Create a vector containing integers
-    v: std::vector = (8, 4, 5, 9);
- 
-    // Add two more integers to vector
-    v.push_back(6);
-    v.push_back(9);
- 
-    // Overwrite element at position 2
-    v[2] = -1;
- 
-    // Print out the vector
-    for v do (n)
-        std::cout << "(n)$ ";
-    std::cout << '\n';
-}
+{% include src/container/vector.cpp2 %}
 ```
 {: .lh-0 }
 

@@ -4,7 +4,6 @@ title: std::stack
 permalink: /container/stack/
 parent: Containers library
 cppreference: /container/stack
-godbolt: https://cpp2.godbolt.org/z/a484399Tn
 ---
 # std::stack
 
@@ -12,33 +11,11 @@ godbolt: https://cpp2.godbolt.org/z/a484399Tn
 
 ## Example
 
-{% include godbolt_example_link.html %}
+{% include godbolt/container/stack.html %}
+{% include godbolt_example_link.html godbolt=url %}
 
 ```cpp
-reportStackSize: (s: std::stack<int>) = {
-    std::cout << "(s.size())$ elements on stack\n";
-}
- 
-reportStackTop: (s: std::stack<int>) = {
-    // Leaves element on stack
-    std::cout << "Top element: (s.top())$\n";
-}
- 
-main: () = {
-    s: std::stack<int> = ();
-    s.push(2);
-    s.push(6);
-    s.push(51);
- 
-    reportStackSize(s);
-    reportStackTop(s);
- 
-    reportStackSize(s);
-    s.pop();
- 
-    reportStackSize(s);
-    reportStackTop(s);
-}
+{% include src/container/stack.cpp2 %}
 ```
 {: .lh-0 }
 

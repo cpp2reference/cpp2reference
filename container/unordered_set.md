@@ -4,7 +4,6 @@ title: std::unordered_set
 permalink: /container/unordered_set/
 parent: Containers library
 cppreference: /container/unordered_set
-godbolt: https://cpp2.godbolt.org/z/79sTK4Pe9
 ---
 # std::unordered_set
 
@@ -12,32 +11,11 @@ godbolt: https://cpp2.godbolt.org/z/79sTK4Pe9
 
 ## Example
 
-{% include godbolt_example_link.html %}
+{% include godbolt/container/unordered_set.html %}
+{% include godbolt_example_link.html godbolt=url %}
 
 ```cpp
-print: (set) = {
-    for set do (elem) {
-        std::cout << "(elem)$ ";
-    }
-    std::cout << '\n';
-}
-
-main: () = {
-    mySet: std::unordered_set = (2, 7, 1, 8, 2, 8); // creates a set of ints
-    print(mySet);
- 
-    mySet.insert(5); // puts an element 5 in the set
-    print(mySet);
- 
-    (iter:= mySet.find(5))
-    if iter != mySet.end() {
-        mySet.erase(iter); // removes an element pointed to by iter
-    }
-    print(mySet);
- 
-    mySet.erase(7); // removes an element 7
-    print(mySet);
-}
+{% include src/container/unordered_set.cpp2 %}
 ```
 {: .lh-0 }
 

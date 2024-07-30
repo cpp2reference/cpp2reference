@@ -1,0 +1,14 @@
+main: () = {
+    example: std::multimap = (
+        std::make_pair(1, 'a'),
+        std::make_pair(2, 'b'));
+ 
+    for (2, 5) do (x) {
+        if example.contains(x) {
+            std::cout << "(x)$: Found\n";
+        }
+        else {
+            std::cout << "(x)$: Not found\n";
+        }
+    }
+}

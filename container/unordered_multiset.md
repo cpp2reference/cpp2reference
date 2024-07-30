@@ -4,7 +4,6 @@ title: std::unordered_multiset
 permalink: /container/unordered_multiset/
 parent: Containers library
 cppreference: /container/unordered_multiset
-godbolt: https://cpp2.godbolt.org/z/PzjhP7bh4
 ---
 # std::unordered_multiset
 
@@ -12,38 +11,11 @@ godbolt: https://cpp2.godbolt.org/z/PzjhP7bh4
 
 ## Example
 
-{% include godbolt_example_link.html %}
+{% include godbolt/container/unordered_multiset.html %}
+{% include godbolt_example_link.html godbolt=url %}
 
 ```cpp
-main: () = {
-    sentence: const std::string = "cpp2reference.com";
-    std::cout << "The sentence: (sentence)$\n";
- 
-    sequence: std::unordered_multiset<char> = ();
-    for sentence do (ch: char) {
-        sequence.insert(ch);
-    }
- 
-    std::cout << "The sequence: { ";
-    for sequence do (ch: char) {
-        std::cout << "(ch)$ ";
-    }
- 
-    std::cout << "}\nSymbol:Frequency: ";
-    (copy it:= sequence.begin())
-    while it != sequence.end() {
-        (range:= sequence.equal_range(it*))
-        if range.first != range.second {
-            symbol:= range.first*;
-            frequency:= std::distance(range.first, range.second);
-            std::cout << "(symbol)$:(frequency)$  ";
-            it = range.second;
-        }
-        else {
-            it++;
-        }
-    }
-}
+{% include src/container/unordered_multiset.cpp2 %}
 ```
 {: .lh-0 }
 
