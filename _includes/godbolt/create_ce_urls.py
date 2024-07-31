@@ -72,6 +72,10 @@ if __name__ == "__main__":
                 res_json = res.json()
                 ce_url   = res_json["url"]
 
+                # Make sure intermediate dirs exist for the destination .html file path
+                dest_file_path = Path(include_filename)
+                dest_file_path.parent.mkdir(exist_ok=True, parents=True)
+
                 # Write the shortlink into the include .html file
                 with open(include_filename, 'w') as inc_file:
                     content = "{% assign url = '" + ce_url + "' %}"
