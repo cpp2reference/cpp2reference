@@ -4,9 +4,16 @@ import json
 import copy
 import requests
 
-def read_clientstate_template():
-    with open("client_state_template.html") as file:
-        return file.read()
+def read_file_as_json(filename):
+    with open(filename) as file:
+        return json.loads(file.read())   
+
+def get_cxx_compiler_settings(path, defaultSettings):
+    custom_filename = path.with_suffix('.json')  # Replaces '.cpp2' extension with '.json'
+    if not os.path.exists(custom_filename):
+        return defaultSettings
+    else:
+        return read_file_as_json(custom_filename)
 
 def make_include_filename(path):
     path_str = str(path)
@@ -18,7 +25,11 @@ def make_include_filename(path):
 
 if __name__ == "__main__":
     # Read the clientState template file for the Compiler Explorer API
-    template_json = json.loads(read_clientstate_template())
+    template_json = read_file_as_json("client_state_template.html")
+
+    # Read the default C++ compiler settings for the code examples
+    #   These can be overwritten on a case-by-case basis
+    default_cxx_settings_json = read_file_as_json("../src/default.json")
 
     processed_count = 0
 
@@ -38,10 +49,18 @@ if __name__ == "__main__":
                 # Read the Cpp2 source code
                 cpp2_source = cpp2_file.read()
 
+                # Look for custom C++ compiler settings
+                cxx_settings_json = get_cxx_compiler_settings(path, default_cxx_settings_json)
+
                 # Create a new clientState JSON object and insert the Cpp2 source
                 client_state = copy.deepcopy(template_json)
                 client_state["sessions"][0]["source"] = cpp2_source
                 client_state["trees"][0]["files"][0]["content"] = cpp2_source
+
+                # Insert the C++ compiler settings to use
+                client_state["trees"][0]["cmakeArgs"] = cxx_settings_json["cmakeArgs"]
+                client_state["trees"][0]["compilers"][0]["id"] = cxx_settings_json["compiler_id"]
+                client_state["trees"][0]["executors"][0]["compiler"]["id"] = cxx_settings_json["compiler_id"]
 
                 # Create the CE shortlink for the clientState
                 res = requests.post("https://godbolt.org/api/shortener", json = client_state)
