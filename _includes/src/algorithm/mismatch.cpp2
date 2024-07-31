@@ -1,0 +1,10 @@
+mirror_ends: (str: std::string) -> std::string = {
+    return std::string(str.begin(),
+                       std::mismatch(str.begin(), str.end(), str.rbegin()).first);
+}
+
+main: () = {
+    std::cout << mirror_ends("abXYZba") << '\n'
+              << mirror_ends("abca") << '\n'
+              << mirror_ends("aba") << '\n';
+}

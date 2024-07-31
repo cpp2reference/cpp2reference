@@ -1,0 +1,25 @@
+Sum: @struct type = {
+    operator(): (inout this, n: int) = { sum += n; }
+    sum: int = 0;
+}
+
+main: () = {
+    v: std::vector = (3, -4, 2, -8, 15, 267);
+ 
+    print:= :(n: int) = { std::cout << "(n)$ "; };
+ 
+    std::cout << "before:\t";
+    std::for_each(v.cbegin(), v.cend(), print);
+    std::cout << '\n';
+ 
+    // increment elements in-place
+    std::for_each(v.begin(), v.end(), :(inout n) = n++);
+ 
+    std::cout << "after:\t";
+    std::for_each(v.cbegin(), v.cend(), print);
+    std::cout << '\n';
+ 
+    // invoke Sum::operator() for each element
+    s: Sum = std::for_each(v.cbegin(), v.cend(), Sum());    
+    std::cout << "sum:\t(s.sum)$\n";
+}

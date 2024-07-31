@@ -1,0 +1,21 @@
+main: () = {
+    vi: std::vector = (1, 2, 3, 4, 5);
+    println(vi);
+ 
+    std::for_each_n(vi.begin(), 3, :(inout n) = n *= 2);
+    println(vi);
+}
+
+println: (v) = {
+    (copy count:= v.size())
+    for v do (e) {
+        std::cout << e;
+        count--;
+        if count == 0 {
+            std::cout << "\n";
+        }
+        else {
+            std::cout << ", ";
+        }
+    }
+}
