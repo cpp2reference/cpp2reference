@@ -1,0 +1,17 @@
+mirror_ends: (str: std::string_view) -> std::string_view == {
+    end:= std::ranges::mismatch(str, str | std::views::reverse).in1;
+    return (str.cbegin(), end);
+    _ = end;
+}
+
+main: () = {
+    std::cout << mirror_ends("abXYZba") << '\n'
+              << mirror_ends("abca") << '\n'
+              << mirror_ends("ABBA") << '\n'
+              << mirror_ends("level") << '\n';
+
+    using namespace std::literals::string_view_literals;
+
+    static_assert("123"sv == mirror_ends("123!@#321"));
+    static_assert("radar"sv == mirror_ends("radar"));
+}

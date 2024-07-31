@@ -1,0 +1,20 @@
+main: () = {
+    source:= std::vector<int>(10);
+    std::iota(source.begin(), source.end(), 0);
+
+    destination: std::vector<int> = ();
+
+    std::ranges::copy(source.begin(), source.end(),
+                      std::back_inserter(destination));
+ 
+    std::cout << "destination contains: ";
+
+    std::ranges::copy(destination, std::ostream_iterator<int>(std::cout, " "));
+    std::cout << '\n';
+
+    std::cout << "odd numbers in destination are: ";
+
+    std::ranges::copy_if(destination, std::ostream_iterator<int>(std::cout, " "),
+                         :(x: int) (x % 2) == 1);
+    std::cout << '\n';
+}

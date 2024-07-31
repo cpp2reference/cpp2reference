@@ -1,0 +1,22 @@
+is_palindrome: (s: std::string_view) -> bool == {
+    views: namespace == std::views;
+    forward:=  s | views::take(s.size() / 2);
+    backward:= s | views::reverse | views::take(s.size() / 2);
+    return std::ranges::equal(forward, backward);
+}
+
+test: (s: std::string_view) = {
+    text: std::string = "is";
+    if !is_palindrome(s) {
+        text += " not";
+    }
+    std::cout << std::quoted(s)
+              << std::format(" {} a palindrome", text)
+              << "\n";
+}
+
+main: () = {
+    test("radar");
+    test("hello");
+    static_assert(is_palindrome("ABBA") && !is_palindrome("AC/DC"));
+}

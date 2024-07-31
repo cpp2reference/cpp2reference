@@ -1,0 +1,26 @@
+print: <Rng>(rem: std::string_view, r: Rng)
+    requires (std::ranges::forward_range<Rng>)
+= {
+    std::cout << "(rem)$: ";
+    for r do (elem) {
+        std::cout << "(elem)$ ";
+    }
+    std::cout << '\n';
+}
+
+main: () = {
+    src: std::array = (1, 2, 3, 4);
+    print("src", src);
+
+    dst:= std::vector<int>(src.size() + 2);
+    std::ranges::copy_backward(src, dst.end());
+    print("dst", dst);
+
+    std::ranges::fill(dst, 0);
+    res:= std::ranges::copy_backward(src.begin(), src.end() - 2, dst.end());
+    print("dst", dst);
+
+    std::cout
+        << "(in - src.begin) == " << std::distance(src.begin(), res.in) << '\n'
+        << "(out - dst.begin) == " << std::distance(dst.begin(), res.out) << '\n';
+}
