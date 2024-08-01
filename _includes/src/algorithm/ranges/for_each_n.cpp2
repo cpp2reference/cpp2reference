@@ -7,10 +7,10 @@ P: @struct type = {
     }
 }
 
-print: (name: std::string_view, v) = {
+print_array: (name: std::string_view, arr) = {
     std::cout << "(name)$: ";
-    (copy n:= v.ssize())
-    for v do (e) {
+    (copy n:= arr.ssize())
+    for arr do (e) {
         std::cout << e;
         n--;
         if n > 0 {
@@ -24,20 +24,20 @@ print: (name: std::string_view, v) = {
 
 main: () = {
     a: std::array = (1, 2, 3, 4, 5);
-    print("a", a);
+    print_array("a", a);
 
     // Negate first three numbers:
     std::ranges::for_each_n(a.begin(), 3, :(inout n) = n *= -1);
-    print("a", a);
+    print_array("a", a);
  
     s: std::array = (:P=(1,'a'), :P=(2, 'b'), :P=(3, 'c'), :P=(4, 'd') );
-    print("s", s);
+    print_array("s", s);
 
     // Negate data members 'P::first' using projection:
     std::ranges::for_each_n(s.begin(), 2, :(inout x) = x *= -1, P::first&);
-    print("s", s);
+    print_array("s", s);
 
     // Capitalize data members 'P::second' using projection:
     std::ranges::for_each_n(s.begin(), 3, :(inout c) = c -= 'a'-'A', P::second&);
-    print("s", s);
+    print_array("s", s);
 }

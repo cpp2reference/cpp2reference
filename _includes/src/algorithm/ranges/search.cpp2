@@ -1,6 +1,6 @@
 using namespace std::literals;
 
-print: (id: int, haystack, needle, found) = {
+print_result: (id: int, haystack, needle, found) = {
     std::cout << "(id)$) search(\"(haystack)$\", \"(needle)$\"); ";
     first:= std::distance(haystack.begin(), found.begin());
     last:=  std::distance(haystack.begin(), found.end());
@@ -26,24 +26,24 @@ main: () = {
         haystack.begin(), haystack.end(),
         needle.begin(), needle.end());
     static_assert(found1.begin() != haystack.begin());
-    print(1, haystack, needle, found1);
+    print_result(1, haystack, needle, found1);
 
     // the search uses ranges r1, r2:
     found2:== std::ranges::search(haystack, needle);
     static_assert(found2.begin() != haystack.begin());
-    print(2, haystack, needle, found2);
+    print_result(2, haystack, needle, found2);
 
     // 'needle' range is empty:
     none:== ""sv;
     found3:== std::ranges::search(haystack, none);
     static_assert(found3.empty());
-    print(3, haystack, none, found3);
+    print_result(3, haystack, none, found3);
 
     // 'needle' will not be found:
     awl:== "efg"sv;
     found4:== std::ranges::search(haystack, awl);
     static_assert(found4.empty());
-    print(4, haystack, awl, found4);
+    print_result(4, haystack, awl, found4);
 
     // the search uses custom comparator and projections:
     bodkin:== "234"sv;
@@ -51,5 +51,5 @@ main: () = {
         :(x: int, y: int) x == y,  // pred
         :(x: int) std::toupper(x), // proj1
         :(y: int) y + 'A' - '1');  // proj2
-    print(5, haystack, bodkin, found5);
+    print_result(5, haystack, bodkin, found5);
 }

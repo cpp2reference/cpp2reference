@@ -1,4 +1,4 @@
-print: (list: std::forward_list<int>) = {
+print_list: (list: std::forward_list<int>) = {
     std::cout << "list: {";
     (copy comma: std::string = ())
     for list do (i) {
@@ -10,26 +10,26 @@ print: (list: std::forward_list<int>) = {
 
 main: () = {
     ints: std::forward_list = (1, 2, 3, 4, 5);
-    print(ints);
+    print_list(ints);
  
     // insert_after (pos, value)
     beginIt:= ints.begin();
     ints.insert_after(beginIt, -6);
-    print(ints);
+    print_list(ints);
  
     // insert_after (pos, count, value)
     anotherIt:= beginIt;
     anotherIt++;
     anotherIt = ints.insert_after(anotherIt, 2 as size_t, -7);
-    print(ints);
+    print_list(ints);
  
     // insert_after (pos, first, last)
     v: const std::vector = (-8, -9, -10);
     anotherIt = ints.insert_after(anotherIt, v.cbegin(), v.cend());
-    print(ints);
+    print_list(ints);
  
     // insert_after (pos, initializer_list)
     x: std::initializer_list<int> = (-11, -12, -13, -14);
     ints.insert_after(anotherIt, x);
-    print(ints);
+    print_list(ints);
 }

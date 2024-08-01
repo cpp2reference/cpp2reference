@@ -1,14 +1,14 @@
 main: () = {
     c: std::multiset = (1, 2, 3, 4, 1, 2, 3, 4);
  
-    print:= :() = {
+    print_ms:= :() = {
         std::cout << "c = { ";
         for c&$* do (n) {
             std::cout << "(n)$ ";
         }
         std::cout << "}\n";
     };
-    print();
+    print_ms();
  
     std::cout << "Erase all odd numbers:\n";
     (copy it:= c.begin())
@@ -20,10 +20,10 @@ main: () = {
             it++;
         }
     }
-    print();
+    print_ms();
  
     std::cout << "Erase 1, erased count: (c.erase(1))$\n";
     std::cout << "Erase 2, erased count: (c.erase(2))$\n";
     std::cout << "Erase 2, erased count: (c.erase(2))$\n";
-    print();
+    print_ms();
 }

@@ -1,4 +1,4 @@
-print: (comment: std::string_view, data) = {
+print_map: (comment: std::string_view, data) = {
     std::cout << comment;
     for data do (pair) {
         std::cout << " (pair.first)$((pair.second)$)";
@@ -13,16 +13,16 @@ main: () = {
         std::make_pair(3, 'c'),
     );
  
-    print("Start:", cont);
+    print_map("Start:", cont);
  
     // Extract node handle and change key
     nh:= cont.extract(1);
     nh.key() = 4;
  
-    print("After extract and before insert:", cont);
+    print_map("After extract and before insert:", cont);
  
     // Insert node handle back
     cont.insert(move nh);
  
-    print("End:", cont);
+    print_map("End:", cont);
 }

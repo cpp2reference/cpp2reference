@@ -1,10 +1,10 @@
 container: type == std::vector<std::string>;
 
-print: (comment: std::string_view, src: container) = {
-    print(comment, src, ());
+print_cont: (comment: std::string_view, src: container) = {
+    print_cont(comment, src, ());
 }
 
-print: (comment: std::string_view, src: container, dst: container) = {
+print_cont: (comment: std::string_view, src: container, dst: container) = {
     prn:= :(name: std::string_view, cont: container) = {
         std::cout << name;
         for cont do (s) {
@@ -28,12 +28,12 @@ print: (comment: std::string_view, src: container, dst: container) = {
 main: () = {
     src: container = ("foo", "bar", "baz");
     dst: container = ("qux", "quux", "quuz", "corge");
-    print("Non-overlapping case; before move_backward:", src, dst);
+    print_cont("Non-overlapping case; before move_backward:", src, dst);
     std::move_backward(src.begin(), src.end(), dst.end());
-    print("After:", src, dst);
+    print_cont("After:", src, dst);
 
     src = ("snap", "crackle", "pop", "lock", "drop");
-    print("Overlapping case; before move_backward:", src);
+    print_cont("Overlapping case; before move_backward:", src);
     std::move_backward(src.begin(), std::next(src.begin(), 3), src.end());
-    print("After:", src);
+    print_cont("After:", src);
 }

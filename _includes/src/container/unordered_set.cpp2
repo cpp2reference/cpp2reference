@@ -1,4 +1,4 @@
-print: (set) = {
+print_set: (set) = {
     for set do (elem) {
         std::cout << "(elem)$ ";
     }
@@ -7,17 +7,17 @@ print: (set) = {
 
 main: () = {
     mySet: std::unordered_set = (2, 7, 1, 8, 2, 8); // creates a set of ints
-    print(mySet);
+    print_set(mySet);
  
     mySet.insert(5); // puts an element 5 in the set
-    print(mySet);
+    print_set(mySet);
  
     (iter:= mySet.find(5))
     if iter != mySet.end() {
         mySet.erase(iter); // removes an element pointed to by iter
     }
-    print(mySet);
+    print_set(mySet);
  
     mySet.erase(7); // removes an element 7
-    print(mySet);
+    print_set(mySet);
 }
