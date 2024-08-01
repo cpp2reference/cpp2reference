@@ -265,6 +265,11 @@ std::ranges::sort(v); // constrained algorithm
 ---
 {: .my-2 }
 
+[`move`](move.md)
+
+---
+{: .my-2 }
+
 [`ranges::move`](ranges/move.md)
 
 ---
