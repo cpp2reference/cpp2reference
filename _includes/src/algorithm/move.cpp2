@@ -1,0 +1,16 @@
+f: (n: int) = {
+    std::this_thread::sleep_for(std::chrono::seconds(n));
+    std::cout << "thread (n)$ ended" << std::endl;
+}
+
+main: () = {
+    v: std::vector<std::jthread> = ();
+    v.emplace_back(f, 1);
+    v.emplace_back(f, 2);
+    v.emplace_back(f, 3);
+    l: std::list<std::jthread> = ();
+
+    // copy() would not compile, because std::jthread is noncopyable
+    std::move(v.begin(), v.end(), std::back_inserter(l));
+    _ = l;
+}
