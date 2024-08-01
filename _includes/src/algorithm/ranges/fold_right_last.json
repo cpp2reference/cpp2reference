@@ -1,0 +1,4 @@
+{
+	"compiler_id": "gsnapshot",
+	"cmakeArgs": "-DJEGP_CXX2_FLAGS=\"-include-std\" -DCMAKE_CXX_FLAGS=\"-std=c++23 -Wall -Wextra -Wconversion\" -GNinja -Wno-dev"
+}
