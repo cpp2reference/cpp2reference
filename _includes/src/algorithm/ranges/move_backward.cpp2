@@ -1,0 +1,34 @@
+Vec: type == std::vector<std::string>;
+
+print_vec: (rem: std::string_view, vec: Vec) = {
+    std::print("{}[{}]: \n", rem, vec.size());
+    for vec do (s : std::string) {
+        if s.empty() {
+            std::cout << std::string("· ");
+        }
+        else {
+            std::cout << "(s)$ ";
+        }
+    }
+    std::cout << '\n';
+}
+
+main: () = {
+    a: Vec = ("▁", "▂", "▃", "▄", "▅", "▆", "▇", "█");
+    b:= Vec(a.size());
+
+    print_vec("Before move:\n" "a", a);
+    print_vec("b", b);
+
+    std::ranges::move_backward(a, b.end());
+
+    print_vec("\n" "Move a >> b:\n" "a", a);
+    print_vec("b", b);
+
+    std::ranges::move_backward(b.begin(), b.end(), a.end());
+    print_vec("\n" "Move b >> a:\n" "a", a);
+    print_vec("b", b);
+
+    std::ranges::move_backward(a.begin(), a.begin() + 3, a.end());
+    print_vec("\n" "Overlapping move a[0, 3) >> a[5, 8):\n" "a", a);
+}

@@ -45,7 +45,7 @@ if __name__ == "__main__":
 
         if not os.path.exists(include_filename):
             print(path)
-            with open(str(path), 'r') as cpp2_file:
+            with open(file=str(path), mode='r', encoding='utf8') as cpp2_file:
                 # Read the Cpp2 source code
                 cpp2_source = cpp2_file.read()
 
