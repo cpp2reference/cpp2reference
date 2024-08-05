@@ -281,3 +281,10 @@ std::ranges::sort(v); // constrained algorithm
 {: .my-2 }
 
 [`ranges::move_backward`](ranges/move_backward.md)
+
+### <a id="swap"></a> Swap operations
+
+---
+{: .my-2 }
+
+[`swap_ranges`](swap_ranges.md)

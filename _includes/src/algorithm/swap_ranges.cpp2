@@ -1,0 +1,20 @@
+print_seq: (comment, seq) = {
+    std::cout << comment;
+    for seq do (e) {
+        std::cout << "(e)$ ";
+    }
+    std::cout << '\n';
+}
+
+main: () = {
+    v: std::vector<char> = ('a', 'b', 'c', 'd', 'e');
+    l: std::list<char>   = ('1', '2', '3', '4', '5');
+
+    print_seq("Before swap_ranges:\n" "v: ", v);
+    print_seq("l: ", l);
+
+    std::swap_ranges(v.begin(), v.begin() + 3, l.begin());
+
+    print_seq("After swap_ranges:\n" "v: ", v);
+    print_seq("l: ", l);
+}
