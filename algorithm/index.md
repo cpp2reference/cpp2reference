@@ -288,3 +288,8 @@ std::ranges::sort(v); // constrained algorithm
 {: .my-2 }
 
 [`swap_ranges`](swap_ranges.md)
+
+---
+{: .my-2 }
+
+[`ranges::swap_ranges`](ranges/swap_ranges.md)
