@@ -1,0 +1,31 @@
+selection_sort: <ForwardIt>(begin: ForwardIt, end: ForwardIt) = {
+    for begin..<end do (it: ForwardIt) {
+        std::iter_swap(it, std::min_element(it, end));
+    }
+}
+
+print_vec: (rem: std::string_view, v: std::vector<int>) = {
+    std::cout << rem;
+    for v do (e: int) {
+        std::cout << "(e)$ ";
+    }
+    std::cout << '\n';
+}
+
+rand_int: <min: int, max: int>() -> int = {
+    dist: std::uniform_int_distribution = (min, max);
+    dev:  std::random_device = ();
+    gen:  std::mt19937 = (dev());
+    return dist(gen);
+    _ = gen;
+}
+
+main: () = {
+    v: std::vector<int> = ();
+    std::generate_n(std::back_inserter(v), 20, rand_int<-9, +9>);
+
+    std::cout << std::showpos;
+    print_vec("Before sort: ", v);
+    selection_sort(v.begin(), v.end());
+    print_vec("After sort:  ", v);
+}
