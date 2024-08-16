@@ -10,6 +10,7 @@ cppreference: /algorithm/ranges
 ---
 
 <style>
+.main-content { line-height: 1.0; }
 p {
     padding: 0px;
     margin: 0px;
@@ -57,6 +58,11 @@ p {
 {: .my-2 }
 
 [`ranges::equal`](equal.md)
+
+---
+{: .my-2 }
+
+[`ranges::lexicographical_compare`](lexicographical_compare.md)
 
 ---
 {: .my-2 }

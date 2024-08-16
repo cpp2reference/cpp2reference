@@ -9,6 +9,7 @@ cppreference: /algorithm
 ---
 
 <style>
+.main-content { line-height: 1.0; }
 p {
     padding: 0px;
     margin: 0px;

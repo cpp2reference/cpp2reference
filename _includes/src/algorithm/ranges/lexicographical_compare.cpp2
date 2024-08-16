@@ -1,0 +1,24 @@
+main: () = {
+    v1: std::vector<char> = ('a', 'b', 'c', 'd');
+    v2: std::vector<char> = ('a', 'b', 'c', 'd');
+
+    ranges: namespace == std::ranges;
+    os:= std::ostream_iterator<char>(std::cout, " ");
+
+    dev: std::random_device = ();
+    gen: std::mt19937 = (dev());
+    while !ranges::lexicographical_compare(v1, v2) {
+        ranges::copy(v1, os);
+        std::cout << ">= ";
+        ranges::copy(v2, os);
+        std::cout << '\n';
+
+        ranges::shuffle(v1, gen);
+        ranges::shuffle(v2, gen);
+    }
+
+    ranges::copy(v1, os);
+    std::cout << "<  ";
+    ranges::copy(v2, os);
+    std::cout << '\n';
+}
