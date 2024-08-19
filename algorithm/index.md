@@ -299,3 +299,10 @@ std::ranges::sort(v); // constrained algorithm
 {: .my-2 }
 
 [`iter_swap`](iter_swap.md)
+
+### <a id="transform"></a> Transform operations
+
+---
+{: .my-2 }
+
+[`transform`](transform.md)

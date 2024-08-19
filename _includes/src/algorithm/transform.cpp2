@@ -1,0 +1,44 @@
+print_ordinals: (ordinals: std::vector<unsigned>) = {
+    std::cout << "ordinals: ";
+    for ordinals do (ord: unsigned) {
+        std::cout << std::setw(3) << ord << ' ';
+    }
+    std::cout << '\n';
+}
+
+to_uppercase: (c: char) -> char = {
+    return unsafe_narrow<char>(std::toupper(c));
+}
+
+to_uppercase_inplace: (inout c: char) = {
+    c = to_uppercase(c);
+}
+
+unary_transform_example: (inout hello: std::string, copy world: std::string) = {
+    // Transform string to uppercase in-place
+    std::transform(hello.cbegin(), hello.cend(), hello.begin(), to_uppercase);
+    std::cout << "hello = " << std::quoted(hello) << '\n';
+
+    // for_each version
+    std::for_each(world.begin(), world.end(), to_uppercase_inplace);
+    std::cout << "world = " << std::quoted(world) << '\n';
+}
+
+binary_transform_example: (move ordinals: std::vector<unsigned>) = {
+    // Transform numbers to doubled values
+    print_ordinals(ordinals);
+
+    std::transform(ordinals.cbegin(), ordinals.cend(), ordinals.cbegin(),
+                   ordinals.begin(), std::plus<>());
+ 
+    print_ordinals(ordinals);
+}
+
+main: () = {
+    hello: std::string = ("hello");
+    unary_transform_example(hello, "world");
+
+    ordinals: std::vector<unsigned> = ();
+    std::copy(hello.cbegin(), hello.cend(), std::back_inserter(ordinals));
+    binary_transform_example(move ordinals);
+}
