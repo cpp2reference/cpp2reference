@@ -306,3 +306,8 @@ std::ranges::sort(v); // constrained algorithm
 {: .my-2 }
 
 [`transform`](transform.md)
+
+---
+{: .my-2 }
+
+[`ranges::transform`](ranges/transform.md)

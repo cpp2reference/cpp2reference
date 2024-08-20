@@ -1,0 +1,44 @@
+Foo: @struct type = {
+    bar: char;
+}
+
+main: () = {
+    s: std::string = ("hello");
+    op:= :(c: char) unsafe_narrow<char>(std::toupper(c));
+
+    ranges: namespace == std::ranges;
+
+    // uppercase the string in-place
+    ranges::transform(s.begin(), s.end(), s.begin(), op);
+
+    ordinals: std::vector<std::size_t> = ();
+    // convert each char to size_t
+    ranges::transform(s, std::back_inserter(ordinals),
+                      :(c: char) c as std::size_t);
+
+    std::cout << "(s)$:";
+    for ordinals do (ord) {
+        std::cout << " (ord)$";
+    }
+
+    // double each ordinal
+    ranges::transform(ordinals, ordinals, ordinals.begin(), std::plus());
+
+    std::cout << '\n';
+    for ordinals do (ord) {
+        std::cout << "(ord)$ ";
+    }
+    std::cout << '\n';
+
+    f: const std::vector = (
+        :Foo=('h'),
+        :Foo=('e'),
+        :Foo=('l'),
+        :Foo=('l'),
+        :Foo=('o'));
+
+    result: std::string = ();
+    // project, then uppercase
+    ranges::transform(f, std::back_inserter(result), op, Foo::bar&);
+    std::cout << result << '\n';
+}
