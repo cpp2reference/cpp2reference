@@ -311,3 +311,10 @@ std::ranges::sort(v); // constrained algorithm
 {: .my-2 }
 
 [`ranges::transform`](ranges/transform.md)
+
+---
+{: .my-2 }
+
+[`replace`](replace.md)
+
+[`replace_if`](replace.md)
