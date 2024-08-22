@@ -161,6 +161,13 @@ p {
 ---
 {: .my-2 }
 
+[`ranges::replace`](replace.md)
+
+[`ranges::replace_if`](replace.md)
+
+---
+{: .my-2 }
+
 [`ranges::swap_ranges`](swap_ranges.md)
 
 # Constrained fold operations

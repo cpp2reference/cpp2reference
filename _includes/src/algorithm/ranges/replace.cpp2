@@ -1,0 +1,27 @@
+print_seq: (v) = {
+    for v do (e) {
+        std::cout << "(e)$ ";
+    }
+    std::cout << '\n';
+}
+
+main: () = {
+    ranges: namespace == std::ranges;
+
+    p: std::array = (1, 6, 1, 6, 1, 6);
+    print_seq(p);
+    ranges::replace(p, 6, 9);
+    print_seq(p);
+
+    q: std::array = (1, 2, 3, 6, 7, 8, 4, 5);
+    print_seq(q);
+    ranges::replace_if(q, :(x: int) x > 5, 5);
+    print_seq(q);
+
+    nums: std::array = (
+        :std::complex<double>=(1, 3),
+        :std::complex<double>=(1, 3));
+    print_seq(nums);
+    ranges::replace(nums, std::complex<double>(1, 3), std::complex<double>(4, 1));
+    print_seq(nums);
+}
