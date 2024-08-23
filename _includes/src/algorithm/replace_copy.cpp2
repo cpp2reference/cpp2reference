@@ -1,0 +1,29 @@
+print_seq: (seq) = {
+    for seq do (e) {
+        std::cout << "(e)$ ";
+    }
+    std::cout << '\n';
+}
+
+main: () = {
+    src: std::vector<short> = (3, 1, 4, 1, 5, 9, 2, 6, 5);
+    print_seq(src);
+    dst:= std::vector<int>(src.size());
+    std::replace_copy_if(src.cbegin(), src.cend(),
+                         dst.begin(),
+                         :(n: short) n > 5, 0);
+    print_seq(dst);
+
+    src2: std::vector = (
+        :std::complex<double>=(1, 3),
+        :std::complex<double>=(2, 4),
+        :std::complex<double>=(3, 5));
+    print_seq(src2);
+
+    dst2:= std::vector<std::complex<double>>(src2.size());
+    std::replace_copy_if(src2.cbegin(), src2.cend(),
+                         dst2.begin(),
+                         :(z: std::complex<double>) std::abs(z) < 5,
+                         std::complex<double>(4, 2));
+    print_seq(dst2);
+}
