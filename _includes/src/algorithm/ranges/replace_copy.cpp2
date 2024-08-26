@@ -1,0 +1,46 @@
+print_seq: (rem, v) = {
+    std::cout << "(rem)$: ";
+    for v do (e) {
+        std::cout << "(e)$ ";
+    }
+    std::cout << '\n';
+}
+
+main: () = {    
+    o: std::vector<int> = ();
+
+    p: std::array = (1, 6, 1, 6, 1, 6);
+    o.resize(p.size());
+    print_seq("p", p);
+    std::ranges::replace_copy(p, o.begin(), 6, 9);
+    print_seq("o", o);
+
+    q: std::array = (1, 2, 3, 6, 7, 8, 4, 5);
+    o.resize(q.size());
+    print_seq("q", q);
+    std::ranges::replace_copy_if(q, o.begin(), :(x: int) 5 < x, 5);
+    print_seq("o", o);
+
+    r: std::vector = (
+        :std::complex<short>=(1, 3),
+        :std::complex<short>=(2, 2),
+        :std::complex<short>=(4, 8));
+    s:= std::vector<std::complex<float>>(r.size());
+    print_seq("r", r);
+    std::ranges::replace_copy(r, s.begin(),
+                              std::complex<short>(1, 3),
+                              std::complex<float>(2.2f, 4.8f));
+    print_seq("s", s);
+
+    b: std::vector = (
+        :std::complex<double>=(1, 3),
+        :std::complex<double>=(2, 2),
+        :std::complex<double>=(4, 8));
+    d:= std::vector<std::complex<double>>(b.size());
+    print_seq("b", b);
+    std::ranges::replace_copy_if(
+        b, d.begin(),
+        :(z: std::complex<double>) std::abs(z) < 5,
+        std::complex<double>(4, 2));
+    print_seq("d", d);
+}
