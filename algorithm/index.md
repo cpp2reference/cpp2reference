@@ -339,3 +339,10 @@ std::ranges::sort(v); // constrained algorithm
 [`ranges::replace_copy`](ranges/replace_copy.md)
 
 [`ranges::replace_copy_if`](ranges/replace_copy.md)
+
+### <a id="generation"></a> Generation operations
+
+---
+{: .my-2 }
+
+[`fill`](fill.md)
