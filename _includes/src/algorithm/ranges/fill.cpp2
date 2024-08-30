@@ -1,0 +1,26 @@
+print_seq: (seq) = {
+    for seq do (e) {
+        std::cout << "(e)$ ";
+    }
+    std::cout << '\n';
+}
+
+main: () = {
+    v: std::vector<int> = (0, 1, 2, 3, 4, 5);
+
+    // set all elements to -1
+    std::ranges::fill(v.begin(), v.end(), -1);
+    print_seq(v);
+
+    // set all element to 10
+    std::ranges::fill(v, 10);
+    print_seq(v);
+
+    nums: std::vector = (
+        :std::complex<double>=(1, 3),
+        :std::complex<double>=(2, 2),
+        :std::complex<double>=(4, 8));
+    print_seq(nums);
+    std::ranges::fill(nums, std::complex<double>(4, 2));
+    print_seq(nums);
+}
