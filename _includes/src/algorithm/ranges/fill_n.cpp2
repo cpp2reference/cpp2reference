@@ -1,0 +1,24 @@
+print_seq: (v) = {
+    for v do (elem) {
+        std::cout << " (elem)$";
+    }
+    std::cout << '\n';
+}
+
+main: () = {
+    n:== 8;
+
+    v: std::vector<std::string> = (n, "▓▓░░");
+    print_seq(v);
+
+    std::ranges::fill_n(v.begin(), n, "░░▓▓");
+    print_seq(v);
+
+    nums: std::vector = (
+        :std::complex<double>=(1, 3),
+        :std::complex<double>=(2, 2),
+        :std::complex<double>=(4, 8));
+    print_seq(nums);
+    std::ranges::fill_n(nums.begin(), 2, std::complex<double>(4, 2));
+    print_seq(nums);
+}

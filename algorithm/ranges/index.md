@@ -161,6 +161,11 @@ p {
 ---
 {: .my-2 }
 
+[`ranges::fill_n`](fill_n.md)
+
+---
+{: .my-2 }
+
 [`ranges::transform`](transform.md)
 
 ---
