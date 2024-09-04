@@ -1,0 +1,22 @@
+i: int = 0;
+
+f: () -> int = {
+    return i++;
+}
+
+main: () = {
+    v:= std::vector<int>(5);
+
+    std::generate(v.begin(), v.end(), f);
+    std::println("v: {}", v);
+
+    // Initialize with default values 0,1,2,3,4 from a lambda function
+    // Equivalent to std::iota(v.begin(), v.end(), 0);
+    n: int = 0;
+    std::generate(v.begin(), v.end(), :() -> int = {
+        val:= n$;
+        n$++;
+        return val;
+    });
+    std::println("v: {}", v);
+}
