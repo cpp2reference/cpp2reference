@@ -1,0 +1,27 @@
+dice: type = {
+    distr:  std::uniform_int_distribution<int> = (1, 6);
+    device: std::random_device;
+    engine: std::mt19937 = (device());
+
+    roll: (inout this) -> int = {
+        return distr(engine);
+    }
+}
+
+iota: (inout v, n: int) = {
+    std::ranges::generate(v, :() n$++);
+}
+
+main: () = {
+    v: std::array<int, 8> = ();
+
+    dice: dice = ();
+
+    std::ranges::generate(v.begin(), v.end(), :() dice&$*.roll());
+    std::println("dice: {}", v);
+    std::ranges::generate(v, :() dice&$*.roll());
+    std::println("dice: {}", v);
+
+    iota(v, 0);
+    std::println("iota: {}", v);
+}

@@ -171,6 +171,11 @@ p {
 ---
 {: .my-2 }
 
+[`ranges::generate`](generate.md)
+
+---
+{: .my-2 }
+
 [`ranges::replace`](replace.md)
 
 [`ranges::replace_if`](replace.md)
