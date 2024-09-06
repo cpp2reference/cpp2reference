@@ -1,0 +1,7 @@
+main: () = {
+    rng: std::mt19937 = (); // default constructed, seeded with fixed seed
+    out_it:_ = std::ostream_iterator<std::mt19937::result_type>(std::cout, " ");
+    std::generate_n(out_it, 5, std::ref(rng));
+    std::cout << '\n';
+    _ = rng;
+}
