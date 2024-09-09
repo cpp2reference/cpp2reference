@@ -376,3 +376,8 @@ std::ranges::sort(v); // constrained algorithm
 {: .my-2 }
 
 [`generate_n`](generate_n.md)
+
+---
+{: .my-2 }
+
+[`ranges::generate_n`](ranges/generate_n.md)
