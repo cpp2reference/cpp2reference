@@ -381,3 +381,12 @@ std::ranges::sort(v); // constrained algorithm
 {: .my-2 }
 
 [`ranges::generate_n`](ranges/generate_n.md)
+
+### <a id="removing"></a> Removing operations
+
+---
+{: .my-2 }
+
+[`remove`](remove.md)
+
+[`remove_if`](remove.md)

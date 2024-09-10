@@ -1,0 +1,32 @@
+main: () = {
+    str1: std::string = ("Text with some   spaces");
+
+    noSpaceEnd:= std::remove(str1.begin(), str1.end(), ' ');
+
+    // The spaces are removed from the string only logically.
+    // Note, when we use view, the original string is still not shrunk:
+    std::println("{} size: {}", std::string_view(str1.begin(), noSpaceEnd), str1.size());
+
+    _ = str1.erase(noSpaceEnd, str1.end());
+
+    // The spaces are removed from the string physically.
+    std::println("{} size: {}", str1, str1.size());
+
+    str2: std::string = ("Text\n with\tsome \t  whitespaces\n\n");
+    _ = str2.erase(std::remove_if(str2.begin(),
+                                  str2.end(),
+                                  :(x: int) std::isspace(x)),
+                   str2.end());
+    std::println("{}", str2);
+
+    nums: std::vector = (
+        :std::complex<double>=(2, 2),
+        :std::complex<double>=(1, 3),
+        :std::complex<double>=(4, 8));
+    _ = nums.erase(std::remove(nums.begin(), nums.end(), std::complex<double>(1, 3)),
+                   nums.end());
+    assert(
+           nums.size() == 2
+        && nums[0] == std::complex<double>(2, 2)
+        && nums[1] == std::complex<double>(4, 8));
+}
