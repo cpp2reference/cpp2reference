@@ -10,7 +10,7 @@ main: () = {
         && !std::ranges::ends_with(:std::array=(1, 2, 3, 4), :std::array=(4, 5))
     );
 
-    using namespace std::literals;
+    using std::literals::_;
 
     std::cout << std::boolalpha
               << std::ranges::ends_with("Constantinopolis"sv, "polis"sv) << ' '

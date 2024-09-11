@@ -14,7 +14,7 @@ print_result: (haystack, needle) = {
 }
 
 main: () = {
-    using namespace std::literals;
+    using std::literals::_;
     secret:== "password password word..."sv;
     wanted:== "password"sv;
 

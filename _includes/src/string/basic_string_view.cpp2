@@ -1,5 +1,5 @@
 main: () = {
-    using namespace std::literals;
+    using std::literals::_;
 
     unicode: std::array = ("▀▄─"sv, "▄▀─"sv, "▀─▄"sv, "▄─▀"sv);
  

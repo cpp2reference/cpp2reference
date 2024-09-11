@@ -50,7 +50,7 @@ traits_cast: <DstTraits, CharT, SrcTraits>
 }
 
 main: () = {
-    using namespace std::literals;
+    using std::literals::_;
  
     s1: == "Hello"sv;
     s2: == "heLLo"sv;

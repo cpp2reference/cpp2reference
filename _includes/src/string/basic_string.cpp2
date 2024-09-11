@@ -1,5 +1,5 @@
 main: () = {
-    using namespace std::literals;
+    using std::literals::_;
  
     // Creating a string from const char*
     str1: std::string = "hello";

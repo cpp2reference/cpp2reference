@@ -15,7 +15,7 @@ ThreadProc: () = {
  
     // wait for 3 seconds to imitate some work
     // being done by the thread
-    using namespace std::literals;
+    using std::literals::_;
     std::this_thread::sleep_for(3s);
  
     std::cout << "[thread] Send the signal\n"; // message
