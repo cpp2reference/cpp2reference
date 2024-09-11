@@ -1,0 +1,43 @@
+main: () = {
+    v1: std::string = ("No - Diagnostic - Required");
+    std::println("\"{}\" (v1, size: {})", v1, v1.size());
+
+    ret:= std::ranges::remove(v1, ' ');
+    std::println("\"{}\" (v1 after `remove`, size: {})", v1, v1.size());
+    std::println(" {}", std::string(std::distance(v1.begin(), ret.begin()) as size_t, '^'));
+
+    _ = v1.erase(ret.begin(), ret.end());
+    std::println("\"{}\" (v1 after `erase`, size: {})", v1, v1.size());
+    std::println();
+
+    // remove_if with custom unary predicate:
+    rm:= :(c: char) !std::isupper(c);
+    v2: std::string = ("Substitution Failure Is Not An Error");
+    std::println("\"{}\" (v2, size: {})", v2, v2.size());
+    remove_result:= std::ranges::remove_if(v2, rm);
+    std::println("\"{}\" (v2 after `remove_if`, size: {})", v2, v2.size());
+    std::println(" {}", std::string(std::distance(v2.begin(), remove_result.begin()) as size_t, '^'));
+
+    _ = v2.erase(remove_result.begin(), remove_result.end());
+    std::println("\"{}\" (v2 after `erase`, size: {})", v2, v2.size());
+    std::println();
+
+    // creating a view into a container that is modified by `remove_if`:
+    using std::string_literals::_;
+    for ("Small Object Optimization"s, "Non-Type Template Parameter"s) do (copy s) {
+        std::cout << std::quoted(s) << " => "
+            << std::string_view(begin(s), std::ranges::remove_if(s, rm).begin()) << '\n';
+        _ = s;
+    }
+
+    nums: std::vector = (
+        :std::complex<double>=(2, 2),
+        :std::complex<double>=(1, 3),
+        :std::complex<double>=(4, 8));
+    e:= std::ranges::remove(nums, std::complex<double>(1, 3));
+    _ = nums.erase(e.begin(), e.end());
+
+    assert(nums.size() == 2
+        && nums[0] == std::complex<double>(2, 2)
+        && nums[1] == std::complex<double>(4, 8));
+}

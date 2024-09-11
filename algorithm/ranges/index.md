@@ -181,6 +181,13 @@ p {
 ---
 {: .my-2 }
 
+[`ranges::remove`](remove.md)
+
+[`ranges::remove_if`](remove.md)
+
+---
+{: .my-2 }
+
 [`ranges::replace`](replace.md)
 
 [`ranges::replace_if`](replace.md)
