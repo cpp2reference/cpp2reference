@@ -397,3 +397,10 @@ std::ranges::sort(v); // constrained algorithm
 [`ranges::remove`](ranges/remove.md)
 
 [`ranges::remove_if`](ranges/remove.md)
+
+---
+{: .my-2 }
+
+[`remove_copy`](remove_copy.md)
+
+[`remove_copy_if`](remove_copy.md)
